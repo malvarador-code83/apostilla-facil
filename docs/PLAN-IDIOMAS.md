@@ -48,7 +48,7 @@ Nación), direcciones/teléfonos/correos de oficinas, y el dataset privado de au
 - **Fase 0 — Decisiones** (ver abajo). Hacer ANTES de codificar.
 - **Fase 1 — Infra i18n:** selector + `t()` + carga por idioma + `<html lang>`. (~1 sesión.) Probar con `es` + `en`.
 - **Fase 2 — Extracción:** sacar las ~202 frases de UI al catálogo base `es` y refactor de los JS. (~1 sesión.)
-- **Fase 3 — Traducción (primer pase MT):** UI + datos por idioma con un buen modelo de IA (p. ej. DeepL). Automatizable por script.
+- **Fase 3 — Traducción (primer pase MT):** UI + datos por idioma con **LLMs de código abierto especializadas en traducción**. Automatizable por script.
 - **Fase 4 — Revisión humana / legal por idioma.** El paso más importante (ver caveats). Cuello de botella real.
 - **Fase 5 — QA por idioma:** render, textos que rompen el layout (alemán es largo), totales, accesibilidad, `<title>`/meta.
 
@@ -67,7 +67,7 @@ Nación), direcciones/teléfonos/correos de oficinas, y el dataset privado de au
 
 - [ ] **Variante de quechua** (Chanka / Collao / otra) y fuente de traducción/revisión.
 - [ ] **Alcance v1:** ¿los 6 idiomas completos, o UI + landing primero y las cadenas después? ¿Quechua solo UI al inicio?
-- [ ] **Herramienta de traducción** (DeepL u otra API de IA) y presupuesto.
+- [ ] **Herramienta de traducción**: LLMs de código abierto especializadas en traducción (y presupuesto si se requiere infraestructura).
 - [ ] **Quién revisa** la exactitud legal/lingüística por idioma.
 - [ ] **Estructura de datos:** archivos por idioma (recomendado) vs campos por idioma.
 - [ ] **URL/SEO:** `?lang=en` vs rutas `/en/` (afecta SEO y cómo se sirve en GitHub Pages).
