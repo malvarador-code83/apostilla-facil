@@ -71,11 +71,11 @@
     ]);
 
     var hero = App.el("section", { class: "hero" }, [
-      App.el("h1", { text: "Sabe qué necesita tu documento antes de ir al Ministerio" }),
-      App.el("p", { class: "lead", text: "Te decimos, paso a paso, qué firmas y sellos necesita tu documento para apostillarlo o legalizarlo — con tiempos, costos y dónde ir. Sin jerga, sin intermediarios y sin pedirte tus datos." }),
+      App.el("h1", { text: "Descubre qué necesita tu documento antes de ir al Ministerio de Relaciones Exteriores" }),
+      App.el("p", { class: "lead", text: "Te decimos, paso a paso, qué firmas y sellos necesita tu documento para apostillarlo o legalizarlo — con tiempos, costos y dónde ir. Sin confusión, sin intermediarios y sin pedirte tus datos." }),
       App.el("div", { class: "mode-grid landing-paths" }, [
         pathCard("🧭", "Empezar la guía", "No he empezado el trámite — te armo el plan paso a paso", function () { App.go("tipo", { modo: "desde_cero" }); }),
-        pathCard("🧑‍🏫", "Tutor de trámites", "Ya empecé — dime qué pasos me faltan", function () { App.go("tipo", { modo: "tutor" }); })
+        pathCard("🧑‍🏫", "Tutor de trámites", "Ya empecé — checklist que marca lo hecho y te dice qué pasos te faltan", function () { App.go("tipo", { modo: "tutor" }); })
       ]),
       App.el("div", { class: "actions-row landing-tools" }, [
         App.el("button", { class: "btn btn--guia", type: "button", onclick: function () { App.go("comoFunciona"); } },
