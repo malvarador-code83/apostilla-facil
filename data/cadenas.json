@@ -1,0 +1,1386 @@
+{
+  "_meta": {
+    "descripcion": "Catálogo de cadenas de certificación. La verdad del sistema: el wizard nunca afirma una firma/tiempo/costo que no esté aquí.",
+    "fuente_oficial": "6570703-cadena-de-certificaciones.pdf (gob.pe/MRE) — ver AGENTE-APOSTILLA-MRE.md §4.2",
+    "costo_estandar_mre": 31.0,
+    "costo_digital_mre": 18.0,
+    "moneda": "PEN",
+    "nota_final_obligatoria": "Esta guía te prepara; confirma los requisitos finales en la ventanilla de Informes del MRE. No reemplaza la atención presencial."
+  },
+  "cadenas": [
+    {
+      "id": "certificado_colegio",
+      "nombre_ciudadano": "Certificado de estudios del colegio (primaria o secundaria)",
+      "categoria": "colegio",
+      "icono": "colegio",
+      "ramificacion": {
+        "pregunta": "¿De qué año es el certificado?",
+        "ayuda": "Mira el formato del documento.",
+        "opciones": [
+          {
+            "texto": "Es de 2020 o antes (formato amarillo)",
+            "set": {
+              "subtipo": "ugel"
+            }
+          },
+          {
+            "texto": "Es posterior a 2020 (tiene código QR)",
+            "set": {
+              "subtipo": "director"
+            }
+          }
+        ]
+      },
+      "pasos": [
+        {
+          "orden": 1,
+          "que": "Acude a la oficina de la UGEL que te corresponde y lleva tu certificado de estudios original (el de formato amarillo, de 2020 o antes).",
+          "entidad": "UGEL",
+          "donde": "La UGEL de tu jurisdicción",
+          "dias_estimados": 0,
+          "costo": 0,
+          "solo_subtipo": "ugel"
+        },
+        {
+          "orden": 2,
+          "que": "Pide que la UGEL legalice tu certificado de estudios. Espera a que te lo devuelvan legalizado antes de seguir al siguiente paso.",
+          "entidad": "UGEL",
+          "donde": "La UGEL de tu jurisdicción",
+          "dias_estimados": 2,
+          "costo": 0,
+          "solo_subtipo": "ugel"
+        },
+        {
+          "orden": 3,
+          "que": "Acude a tu colegio (la institución educativa donde estudiaste) y lleva tu certificado de estudios original (el formato nuevo, posterior a 2020, que tiene código QR).",
+          "entidad": "Institución educativa",
+          "donde": "Tu colegio",
+          "dias_estimados": 0,
+          "costo": 0,
+          "solo_subtipo": "director"
+        },
+        {
+          "orden": 4,
+          "que": "Pide que el Director de tu colegio firme tu certificado de estudios. Recoge el documento ya firmado por el Director antes de continuar.",
+          "entidad": "Institución educativa",
+          "donde": "Tu colegio",
+          "dias_estimados": 1,
+          "costo": 0,
+          "solo_subtipo": "director"
+        },
+        {
+          "orden": 5,
+          "que": "Acude al Ministerio de Educación (MINEDU), al Archivo de Actas y Certificados, y lleva tu certificado ya legalizado o firmado en el paso anterior.",
+          "entidad": "Ministerio de Educación (MINEDU)",
+          "donde": "Archivo de Actas y Certificados, Calle Del Comercio N° 193, San Borja, Lima",
+          "telefono": "(01) 224-0131",
+          "dias_estimados": 0,
+          "costo": 0
+        },
+        {
+          "orden": 6,
+          "que": "Pide que el MINEDU legalice la firma de tu certificado. Pregunta si esa firma está registrada ante el MRE y es válida para el exterior. Si te dicen que NO, pide que te indiquen la oficina o la persona del MINEDU cuya firma SÍ esté registrada ante el MRE.",
+          "entidad": "Ministerio de Educación (MINEDU)",
+          "donde": "Archivo de Actas y Certificados, Calle Del Comercio N° 193, San Borja, Lima",
+          "telefono": "(01) 224-0131",
+          "dias_estimados": 2,
+          "costo": 0,
+          "verificar_firma": true
+        },
+        {
+          "orden": 7,
+          "que": "Lleva tu certificado al MRE para apostillarlo o legalizarlo (apostilla si el país de destino pertenece al Convenio de La Haya; legalización si no). Acredita tu condición de peruano para que el trámite sea gratuito.",
+          "entidad": "MRE",
+          "donde": "MRE - Trámites Consulares / Centro MAC / Apostilla Digital",
+          "dias_estimados": 1,
+          "costo": 0,
+          "nota": "GRATIS para peruanos acreditando su condición."
+        }
+      ],
+      "vigencia_sugerida_meses": null,
+      "gratuidad": "Gratis para peruanos (documento educativo).",
+      "depende_pais": true,
+      "fuente": "cadena-de-certificaciones.pdf, caso 1"
+    },
+    {
+      "id": "titulo_instituto",
+      "nombre_ciudadano": "Título o certificado de instituto (educación superior no universitaria)",
+      "categoria": "instituto",
+      "icono": "instituto",
+      "ramificacion": {
+        "pregunta": "¿De qué año es el título o certificado?",
+        "opciones": [
+          {
+            "texto": "Título anterior a 2016 / certificado anterior a 2018",
+            "set": {
+              "subtipo": "con_regional"
+            }
+          },
+          {
+            "texto": "Título desde 2016 / certificado desde 2018",
+            "set": {
+              "subtipo": null
+            }
+          }
+        ]
+      },
+      "pasos": [
+        {
+          "orden": 1,
+          "que": "Acude a la Direccion Regional de Educacion (DRE) de la region donde estudiaste y lleva tu titulo o certificado de instituto. Pide que te indiquen quien firma este tipo de documentos para que valgan en el extranjero.",
+          "entidad": "Direccion Regional de Educacion",
+          "donde": "La DRE de la region donde estudiaste",
+          "dias_estimados": 0,
+          "costo": 0,
+          "solo_subtipo": "con_regional",
+          "nota": "Este paso solo aplica si tu titulo es anterior a 2016 o tu certificado es anterior a 2018."
+        },
+        {
+          "orden": 2,
+          "que": "Pide que la Direccion Regional de Educacion competente firme tu documento. Pregunta si esa firma esta registrada ante el MRE y es valida para el exterior; si te dicen que NO, pide que te indiquen la oficina o persona cuya firma SI este registrada ante el MRE.",
+          "entidad": "Direccion Regional de Educacion",
+          "donde": "La DRE de la region donde estudiaste",
+          "dias_estimados": 2,
+          "costo": 0,
+          "solo_subtipo": "con_regional"
+        },
+        {
+          "orden": 3,
+          "que": "Acude al Ministerio de Educacion (MINEDU), a la oficina de Archivo de Actas y Certificados. Puedes llamar antes para confirmar el horario y los requisitos.",
+          "entidad": "Ministerio de Educacion (MINEDU)",
+          "donde": "Archivo de Actas y Certificados, Calle Del Comercio N° 193, San Borja, Lima",
+          "telefono": "(01) 224-0131",
+          "dias_estimados": 0,
+          "costo": 0
+        },
+        {
+          "orden": 4,
+          "que": "Pide que el MINEDU legalice la firma de tu documento. Pregunta si esa firma esta registrada ante el MRE y es valida para el exterior; si te dicen que NO, pide que te indiquen la oficina o persona cuya firma SI este registrada ante el MRE.",
+          "entidad": "Ministerio de Educacion (MINEDU)",
+          "donde": "Archivo de Actas y Certificados, Calle Del Comercio N° 193, San Borja, Lima",
+          "telefono": "(01) 224-0131",
+          "dias_estimados": 2,
+          "costo": 0,
+          "verificar_firma": true
+        },
+        {
+          "orden": 5,
+          "que": "Lleva tu documento ya firmado y legalizado al MRE para apostillarlo o legalizarlo (apostilla si el pais de destino pertenece al Convenio de La Haya; legalizacion si no). Acude a Tramites Consulares, a un Centro MAC o usa la Apostilla Digital.",
+          "entidad": "MRE",
+          "donde": "MRE - Tramites Consulares / Centro MAC / Apostilla Digital",
+          "dias_estimados": 1,
+          "costo": 0,
+          "nota": "GRATIS para peruanos."
+        }
+      ],
+      "vigencia_sugerida_meses": null,
+      "gratuidad": "Gratis para peruanos (documento educativo).",
+      "depende_pais": true,
+      "fuente": "cadena-de-certificaciones.pdf, caso 2"
+    },
+    {
+      "id": "constancia_instituto",
+      "nombre_ciudadano": "Constancia u otra certificación de instituto (no universitaria)",
+      "categoria": "instituto",
+      "icono": "instituto",
+      "pasos": [
+        {
+          "orden": 1,
+          "que": "Acude a la Dirección Regional de Educación (DRE) de tu región y lleva tu constancia del instituto.",
+          "entidad": "Dirección Regional de Educación",
+          "donde": "La DRE de tu región",
+          "dias_estimados": 0,
+          "costo": 0
+        },
+        {
+          "orden": 2,
+          "que": "Pide que la autoridad regional competente firme tu constancia. Este es el primer paso oficial de la cadena.",
+          "entidad": "Dirección Regional de Educación",
+          "donde": "La DRE de tu región",
+          "dias_estimados": 2,
+          "costo": 0
+        },
+        {
+          "orden": 3,
+          "que": "Lleva tu constancia ya firmada por la DRE al Ministerio de Educación (MINEDU).",
+          "entidad": "Ministerio de Educación (MINEDU)",
+          "donde": "Calle Del Comercio N° 193, San Borja, Lima",
+          "telefono": "(01) 224-0131",
+          "dias_estimados": 0,
+          "costo": 0
+        },
+        {
+          "orden": 4,
+          "que": "Pide en el MINEDU que legalicen la firma de la DRE. Pregunta si esa firma está registrada ante el MRE y es válida para el exterior. Si te dicen que NO, pide que te indiquen la oficina o persona cuya firma SÍ esté registrada ante el MRE.",
+          "entidad": "Ministerio de Educación (MINEDU)",
+          "donde": "Calle Del Comercio N° 193, San Borja, Lima",
+          "telefono": "(01) 224-0131",
+          "dias_estimados": 2,
+          "costo": 0,
+          "verificar_firma": true
+        },
+        {
+          "orden": 5,
+          "que": "Lleva tu documento al MRE para apostillarlo o legalizarlo (apostilla si el país de destino pertenece al Convenio de La Haya; legalización si no).",
+          "entidad": "MRE",
+          "donde": "MRE - Trámites Consulares / Centro MAC",
+          "dias_estimados": 1,
+          "costo": 31
+        }
+      ],
+      "vigencia_sugerida_meses": null,
+      "gratuidad": false,
+      "depende_pais": true,
+      "fuente": "cadena-de-certificaciones.pdf, caso 3"
+    },
+    {
+      "id": "titulo_universidad",
+      "nombre_ciudadano": "Título, grado o certificado de universidad",
+      "categoria": "universidad",
+      "icono": "universidad",
+      "pasos": [
+        {
+          "orden": 1,
+          "que": "Acude a SUNEDU con tu titulo, grado o certificado de universidad. SUNEDU es la entidad que verifica que tu universidad y tus autoridades son reconocidas; sin su constancia el MRE no puede apostillar tu documento.",
+          "entidad": "SUNEDU",
+          "donde": "Calle Aldabas N° 317, Urb. Las Gardenias, Santiago de Surco, Lima",
+          "telefono": "(01) 500-3930",
+          "dias_estimados": 0,
+          "costo": 0,
+          "error_frecuente": "Ir directo al MRE con el titulo sin pasar antes por SUNEDU. Sin la Constancia de Verificacion de SUNEDU, el MRE no apostilla."
+        },
+        {
+          "orden": 2,
+          "que": "Pide la \"Constancia de Verificacion de Datos de Autoridades\" (y, si te la solicitan, tambien la Constancia de Inscripcion) y que la firme el Jefe de Registro de Grados y Titulos de SUNEDU. Esta constancia es GRATIS para peruanos.",
+          "entidad": "SUNEDU",
+          "donde": "Calle Aldabas N° 317, Urb. Las Gardenias, Santiago de Surco, Lima",
+          "telefono": "(01) 500-3930",
+          "dias_estimados": 3,
+          "costo": 0,
+          "verificar_firma": true,
+          "nota": "Pregunta si esa firma esta registrada ante el MRE y es valida para el exterior. Si te dicen que NO, pide que te indiquen la oficina o persona cuya firma SI este registrada ante el MRE.",
+          "tip": "La constancia es GRATIS para peruanos."
+        },
+        {
+          "orden": 3,
+          "que": "Lleva tu documento junto con la Constancia de Verificacion al MRE para apostillarlo o legalizarlo (apostilla si el pais de destino pertenece al Convenio de La Haya; legalizacion si no). No olvides llevar las dos cosas: el documento y la constancia de SUNEDU.",
+          "entidad": "MRE",
+          "donde": "MRE - Trámites Consulares / Centro MAC / Apostilla Digital",
+          "dias_estimados": 1,
+          "costo": 0,
+          "nota": "La constancia es GRATIS para peruanos."
+        }
+      ],
+      "vigencia_sugerida_meses": null,
+      "gratuidad": "Constancia gratis para peruanos.",
+      "depende_pais": true,
+      "fuente": "cadena-de-certificaciones.pdf, caso 4"
+    },
+    {
+      "id": "acta_municipal",
+      "nombre_ciudadano": "Partida o acta de nacimiento, matrimonio o defunción (emitida por una municipalidad)",
+      "categoria": "registro_civil",
+      "icono": "acta",
+      "pasos": [
+        {
+          "orden": 1,
+          "que": "Acude a la municipalidad donde está registrada tu acta (de nacimiento, matrimonio o defunción) y solicita una copia certificada del acta.",
+          "entidad": "Municipalidad",
+          "donde": "La municipalidad que emitió el acta",
+          "dias_estimados": 0,
+          "costo": 0,
+          "nota": "Si imprimiste el acta por internet, NO sirve para este trámite: necesitas una con la firma física del registrador."
+        },
+        {
+          "orden": 2,
+          "que": "Pide al Registrador Civil de la municipalidad que firme y certifique tu acta a mano (firma FÍSICA). Asegúrate de que la firma quede estampada físicamente en el documento.",
+          "entidad": "Municipalidad",
+          "donde": "La municipalidad que emitió el acta",
+          "dias_estimados": 1,
+          "costo": 0,
+          "error_frecuente": "Llevar el acta impresa por internet: NO sirve. Debe tener la firma física del registrador."
+        },
+        {
+          "orden": 3,
+          "que": "Acude a una oficina de RENIEC con tu acta ya firmada por el Registrador Civil.",
+          "entidad": "RENIEC",
+          "donde": "Oficina RENIEC (Lima, Piura, Puno, Iquitos, Arequipa o Tacna)",
+          "dias_estimados": 0,
+          "costo": 0
+        },
+        {
+          "orden": 4,
+          "que": "Pide que un Autenticador de firmas de RENIEC ponga su firma y su sticker en tu acta. Pregunta si esa firma está registrada ante el MRE y es válida para el exterior. Si te dicen que NO, pide que te indiquen la oficina o persona cuya firma SÍ esté registrada ante el MRE.",
+          "entidad": "RENIEC",
+          "donde": "Oficina RENIEC (Lima, Piura, Puno, Iquitos, Arequipa o Tacna)",
+          "dias_estimados": 0,
+          "costo": 0,
+          "verificar_firma": true,
+          "error_frecuente": "Que falte la firma y el sticker de RENIEC (frecuente en municipalidades de zonas alejadas).",
+          "tip": "Pregunta siempre en RENIEC: \"¿esta firma es válida para el exterior?\""
+        },
+        {
+          "orden": 5,
+          "que": "Lleva tu documento al MRE para apostillarlo o legalizarlo (apostilla si el país de destino pertenece al Convenio de La Haya; legalización si no pertenece).",
+          "entidad": "MRE",
+          "donde": "MRE - Trámites Consulares / Centro MAC",
+          "dias_estimados": 1,
+          "costo": 31
+        }
+      ],
+      "vigencia_sugerida_meses": 3,
+      "gratuidad": false,
+      "depende_pais": true,
+      "fuente": "cadena-de-certificaciones.pdf, caso 5"
+    },
+    {
+      "id": "solteria_municipal",
+      "nombre_ciudadano": "Certificado o constancia de soltería (emitida por una municipalidad)",
+      "categoria": "registro_civil",
+      "icono": "acta",
+      "pasos": [
+        {
+          "orden": 1,
+          "que": "Acude a la municipalidad y solicita tu certificado o constancia de soltería.",
+          "entidad": "Municipalidad",
+          "donde": "La municipalidad que la emitió",
+          "dias_estimados": 0,
+          "costo": 0
+        },
+        {
+          "orden": 2,
+          "que": "Pide que el Registrador Civil de la municipalidad firme y certifique tu constancia de soltería.",
+          "entidad": "Municipalidad",
+          "donde": "La municipalidad que la emitió",
+          "dias_estimados": 1,
+          "costo": 0
+        },
+        {
+          "orden": 3,
+          "que": "Lleva tu constancia ya firmada a una oficina de RENIEC.",
+          "entidad": "RENIEC",
+          "donde": "Oficina RENIEC (Lima, Piura, Puno, Iquitos, Arequipa o Tacna)",
+          "dias_estimados": 0,
+          "costo": 0
+        },
+        {
+          "orden": 4,
+          "que": "Pide que un Autenticador de firmas de RENIEC ponga su firma y su sticker en tu constancia. Pregunta si esa firma está registrada ante el MRE y es válida para el exterior. Si te dicen que NO, pide que te indiquen la oficina o persona cuya firma SÍ esté registrada ante el MRE.",
+          "entidad": "RENIEC",
+          "donde": "Oficina RENIEC (Lima, Piura, Puno, Iquitos, Arequipa o Tacna)",
+          "dias_estimados": 0,
+          "costo": 0,
+          "verificar_firma": true,
+          "tip": "Pregunta en RENIEC si la firma es válida para el exterior."
+        },
+        {
+          "orden": 5,
+          "que": "Lleva tu documento al MRE para apostillarlo o legalizarlo (apostilla si el país pertenece al Convenio de La Haya; legalización si no).",
+          "entidad": "MRE",
+          "donde": "MRE - Trámites Consulares / Centro MAC",
+          "dias_estimados": 1,
+          "costo": 31
+        }
+      ],
+      "vigencia_sugerida_meses": 3,
+      "gratuidad": false,
+      "depende_pais": true,
+      "fuente": "cadena-de-certificaciones.pdf, caso 6"
+    },
+    {
+      "id": "acta_reniec",
+      "nombre_ciudadano": "Partida o acta de nacimiento, matrimonio o defunción (emitida por RENIEC)",
+      "categoria": "registro_civil",
+      "icono": "acta",
+      "pasos": [
+        {
+          "orden": 1,
+          "que": "Acude a una oficina de RENIEC y solicita tu partida o acta (de nacimiento, matrimonio o defunción). RENIEC la emite e imprime ahí mismo; no necesitas llevar una de antes.",
+          "entidad": "RENIEC",
+          "donde": "Oficina RENIEC",
+          "dias_estimados": 0,
+          "costo": 0,
+          "tip": "Lleva tu DNI y pide la copia certificada para uso en el extranjero."
+        },
+        {
+          "orden": 2,
+          "que": "Pide que un Certificador de RENIEC certifique tu acta. Pregunta si esa firma esta registrada ante el MRE y es valida para el exterior. Si te dicen que NO, pide que te indiquen la oficina o la persona cuya firma SI este registrada ante el MRE.",
+          "entidad": "RENIEC",
+          "donde": "Oficina RENIEC",
+          "dias_estimados": 0,
+          "costo": 0,
+          "verificar_firma": true,
+          "tip": "Pregunta siempre en RENIEC: \"¿esta firma es valida para el exterior?\". Las actas que sacaste por internet no valen por si solas: necesitas la certificacion de un Certificador de RENIEC."
+        },
+        {
+          "orden": 3,
+          "que": "Lleva tu documento al MRE para apostillarlo o legalizarlo (apostilla si el pais de destino pertenece al Convenio de La Haya; legalizacion si no pertenece).",
+          "entidad": "MRE",
+          "donde": "MRE - Tramites Consulares / Centro MAC",
+          "dias_estimados": 1,
+          "costo": 31
+        }
+      ],
+      "vigencia_sugerida_meses": 3,
+      "gratuidad": false,
+      "depende_pais": true,
+      "fuente": "cadena-de-certificaciones.pdf, caso 7"
+    },
+    {
+      "id": "constancia_matrimonio_reniec",
+      "nombre_ciudadano": "Constancia de inscripción de matrimonio u otra constancia de RENIEC",
+      "categoria": "registro_civil",
+      "icono": "acta",
+      "pasos": [
+        {
+          "orden": 1,
+          "que": "Acude a una oficina de RENIEC y solicita tu constancia (por ejemplo, la de inscripción de matrimonio). RENIEC la emite ahí mismo; lleva tu DNI.",
+          "entidad": "RENIEC",
+          "donde": "Oficina RENIEC",
+          "dias_estimados": 0,
+          "costo": 0
+        },
+        {
+          "orden": 2,
+          "que": "Pide que un Certificador de RENIEC certifique tu constancia (que ponga su firma y su sello). Pregunta si esa firma está registrada ante el MRE y es válida para el exterior. Si te dicen que NO, pide que te indiquen la oficina o la persona cuya firma SÍ esté registrada ante el MRE.",
+          "entidad": "RENIEC",
+          "donde": "Oficina RENIEC",
+          "dias_estimados": 0,
+          "costo": 0,
+          "verificar_firma": true,
+          "tip": "Las constancias o partidas que sacas por internet NO valen para el exterior: necesitas la certificación con firma del Certificador de RENIEC."
+        },
+        {
+          "orden": 3,
+          "que": "Lleva tu documento ya certificado al MRE para apostillarlo o legalizarlo (apostilla si el país de destino pertenece al Convenio de La Haya; legalización si no).",
+          "entidad": "MRE",
+          "donde": "MRE - Trámites Consulares / Centro MAC",
+          "dias_estimados": 1,
+          "costo": 31
+        }
+      ],
+      "vigencia_sugerida_meses": 3,
+      "gratuidad": false,
+      "depende_pais": true,
+      "fuente": "cadena-de-certificaciones.pdf, caso 8"
+    },
+    {
+      "id": "eclesiastico",
+      "nombre_ciudadano": "Documento de iglesia (bautismo, confirmación, matrimonio religioso)",
+      "categoria": "iglesia",
+      "icono": "iglesia",
+      "pasos": [
+        {
+          "orden": 1,
+          "que": "Acude al Arzobispado de tu jurisdicción con tu documento de iglesia (la partida de bautismo, de confirmación o de matrimonio religioso). Lleva el documento original.",
+          "entidad": "Arzobispado",
+          "donde": "Arzobispado de tu jurisdicción. En Lima: Jr. Chancay N° 282, Cercado de Lima",
+          "telefono": "(01) 203-7700",
+          "dias_estimados": 0,
+          "costo": 0
+        },
+        {
+          "orden": 2,
+          "que": "Pide que el Arzobispado certifique tu documento. Quien lo firma debe ser el Obispo, el Vicario General, el Canciller, el Vicecanciller o un Notario eclesiástico cuya firma esté registrada en la Cancillería del Arzobispado. Cuando te entreguen el documento certificado, pregunta si esa firma está registrada ante el MRE y es válida para el exterior. Si te dicen que NO, pide que te indiquen la oficina o la persona cuya firma SÍ esté registrada ante el MRE.",
+          "entidad": "Arzobispado",
+          "donde": "Arzobispado de tu jurisdicción. En Lima: Jr. Chancay N° 282, Cercado de Lima",
+          "telefono": "(01) 203-7700",
+          "dias_estimados": 3,
+          "costo": 0,
+          "verificar_firma": true
+        },
+        {
+          "orden": 3,
+          "que": "Lleva tu documento ya certificado al MRE para apostillarlo o legalizarlo. Te darán apostilla si el país de destino pertenece al Convenio de La Haya; te darán legalización si no pertenece.",
+          "entidad": "MRE",
+          "donde": "MRE - Trámites Consulares / Centro MAC",
+          "dias_estimados": 1,
+          "costo": 31
+        }
+      ],
+      "vigencia_sugerida_meses": null,
+      "gratuidad": false,
+      "depende_pais": true,
+      "fuente": "cadena-de-certificaciones.pdf, caso 9"
+    },
+    {
+      "id": "certificado_medico",
+      "nombre_ciudadano": "Certificado médico",
+      "categoria": "medico",
+      "icono": "medico",
+      "ramificacion": {
+        "pregunta": "¿Quién lo emitió?",
+        "opciones": [
+          {
+            "texto": "MINSA (hospital público del Estado)",
+            "set": {
+              "subtipo": "minsa"
+            }
+          },
+          {
+            "texto": "EsSalud",
+            "set": {
+              "subtipo": "essalud"
+            }
+          },
+          {
+            "texto": "Un médico o clínica particular",
+            "set": {
+              "subtipo": "particular"
+            }
+          }
+        ]
+      },
+      "pasos": [
+        {
+          "orden": 1,
+          "que": "Acude al Ministerio de Salud (MINSA) y lleva tu certificado medico.",
+          "entidad": "MINSA",
+          "donde": "Ministerio de Salud",
+          "dias_estimados": 0,
+          "costo": 0,
+          "solo_subtipo": "minsa"
+        },
+        {
+          "orden": 2,
+          "que": "Pide que un funcionario competente del MINSA certifique tu certificado medico. Pregunta si esa firma esta registrada ante el MRE y es valida para el exterior. Si te dicen que NO, pide que te indiquen la oficina o persona cuya firma SI este registrada ante el MRE.",
+          "entidad": "MINSA",
+          "donde": "Ministerio de Salud",
+          "dias_estimados": 3,
+          "costo": 0,
+          "verificar_firma": true,
+          "solo_subtipo": "minsa"
+        },
+        {
+          "orden": 3,
+          "que": "Acude a EsSalud y lleva tu certificado medico.",
+          "entidad": "EsSalud",
+          "donde": "EsSalud",
+          "dias_estimados": 0,
+          "costo": 0,
+          "solo_subtipo": "essalud"
+        },
+        {
+          "orden": 4,
+          "que": "Pide que un funcionario competente de EsSalud certifique tu certificado medico. Pregunta si esa firma esta registrada ante el MRE y es valida para el exterior. Si te dicen que NO, pide que te indiquen la oficina o persona cuya firma SI este registrada ante el MRE.",
+          "entidad": "EsSalud",
+          "donde": "EsSalud",
+          "dias_estimados": 3,
+          "costo": 0,
+          "verificar_firma": true,
+          "solo_subtipo": "essalud"
+        },
+        {
+          "orden": 5,
+          "que": "Acude al Colegio Medico del Peru y lleva tu certificado medico firmado por el medico particular.",
+          "entidad": "Colegio Médico del Perú",
+          "donde": "Colegio Médico del Perú",
+          "dias_estimados": 0,
+          "costo": 0,
+          "solo_subtipo": "particular"
+        },
+        {
+          "orden": 6,
+          "que": "Pide que el Decano del Colegio Medico del Peru legalice la firma del medico que firmo tu certificado. Pregunta si esa firma esta registrada ante el MRE y es valida para el exterior. Si te dicen que NO, pide que te indiquen la oficina o persona cuya firma SI este registrada ante el MRE.",
+          "entidad": "Colegio Médico del Perú",
+          "donde": "Colegio Médico del Perú",
+          "dias_estimados": 3,
+          "costo": 0,
+          "verificar_firma": true,
+          "solo_subtipo": "particular"
+        },
+        {
+          "orden": 7,
+          "que": "Lleva tu documento ya certificado al MRE para apostillarlo o legalizarlo (apostilla si el pais de destino pertenece al Convenio de La Haya; legalizacion si no pertenece).",
+          "entidad": "MRE",
+          "donde": "MRE - Trámites Consulares / Centro MAC",
+          "dias_estimados": 1,
+          "costo": 31
+        }
+      ],
+      "vigencia_sugerida_meses": null,
+      "gratuidad": false,
+      "depende_pais": true,
+      "fuente": "cadena-de-certificaciones.pdf, caso 10"
+    },
+    {
+      "id": "colegio_profesional",
+      "nombre_ciudadano": "Certificado o constancia de un colegio profesional",
+      "categoria": "colegio_profesional",
+      "icono": "colegio_profesional",
+      "pasos": [
+        {
+          "orden": 1,
+          "que": "Acude al colegio profesional que emitió tu certificado o constancia (por ejemplo, el Colegio de Ingenieros, de Abogados o de Contadores, según tu profesión). Lleva el documento contigo.",
+          "entidad": "Colegio Profesional",
+          "donde": "El colegio profesional correspondiente",
+          "dias_estimados": 0,
+          "costo": 0
+        },
+        {
+          "orden": 2,
+          "que": "Pide que el representante del colegio profesional legalice tu documento de profesional colegiado. Pregunta si esa firma está registrada ante el MRE (Cancillería) y es válida para el exterior. Si te dicen que NO, pide que te indiquen la oficina o la persona del colegio cuya firma SÍ esté registrada ante el MRE.",
+          "entidad": "Colegio Profesional",
+          "donde": "El colegio profesional correspondiente",
+          "dias_estimados": 3,
+          "costo": 0,
+          "verificar_firma": true
+        },
+        {
+          "orden": 3,
+          "que": "Lleva tu documento al MRE para apostillarlo o legalizarlo (apostilla si el país de destino pertenece al Convenio de La Haya; legalización si no). Acude a Trámites Consulares o a un Centro MAC y paga el derecho del trámite.",
+          "entidad": "MRE",
+          "donde": "MRE - Trámites Consulares / Centro MAC",
+          "dias_estimados": 1,
+          "costo": 31
+        }
+      ],
+      "vigencia_sugerida_meses": null,
+      "gratuidad": false,
+      "depende_pais": true,
+      "fuente": "cadena-de-certificaciones.pdf, caso 11"
+    },
+    {
+      "id": "antecedentes_penales",
+      "nombre_ciudadano": "Certificado de antecedentes penales",
+      "categoria": "antecedentes",
+      "icono": "antecedentes",
+      "pasos": [
+        {
+          "orden": 1,
+          "que": "Acude a la oficina del Registro Nacional de Condenas del Poder Judicial y solicita (u obtén) tu certificado de antecedentes penales.",
+          "entidad": "Registro Nacional de Condenas (Poder Judicial)",
+          "donde": "Av. Abancay s/n, Cdra. 5, Lima",
+          "telefono": "(01) 410-1414 anexo 12013 / 12145",
+          "dias_estimados": 0,
+          "costo": 0,
+          "tip": "Si te queda lejos, primero llama al (01) 410-1414 anexo 12013 o 12145 para confirmar el horario de atencion y si necesitas cita."
+        },
+        {
+          "orden": 2,
+          "que": "Pide que un funcionario del Registro Nacional de Condenas certifique tu documento y le ponga su firma.",
+          "entidad": "Registro Nacional de Condenas (Poder Judicial)",
+          "donde": "Av. Abancay s/n, Cdra. 5, Lima",
+          "telefono": "(01) 410-1414 anexo 12013 / 12145",
+          "dias_estimados": 2,
+          "costo": 0,
+          "verificar_firma": true,
+          "nota": "Pregunta si esa firma esta registrada ante el MRE y es valida para el exterior. Si te dicen que NO, pide que te indiquen la oficina o persona cuya firma SI este registrada ante el MRE."
+        },
+        {
+          "orden": 3,
+          "que": "Lleva tu documento ya certificado al MRE para apostillarlo o legalizarlo (apostilla si el pais de destino pertenece al Convenio de La Haya; legalizacion si no).",
+          "entidad": "MRE",
+          "donde": "MRE - Tramites Consulares / Centro MAC / Apostilla Digital",
+          "dias_estimados": 1,
+          "costo": 31,
+          "tip": "Si tienes apuro, pregunta por la Apostilla Digital en linea o por el Centro MAC; no estan garantizados, pero pueden ser mas rapidos."
+        }
+      ],
+      "vigencia_sugerida_meses": null,
+      "gratuidad": false,
+      "depende_pais": true,
+      "fuente": "cadena-de-certificaciones.pdf, caso 12"
+    },
+    {
+      "id": "antecedentes_judiciales",
+      "nombre_ciudadano": "Certificado de antecedentes judiciales",
+      "categoria": "antecedentes",
+      "icono": "antecedentes",
+      "pasos": [
+        {
+          "orden": 1,
+          "que": "Acude a una oficina del INPE (Instituto Nacional Penitenciario) y solicita (u obtén) tu certificado de antecedentes judiciales.",
+          "entidad": "INPE",
+          "donde": "Jr. Carabaya N° 456, Lima",
+          "telefono": "(01) 426-1578",
+          "dias_estimados": 0,
+          "costo": 0
+        },
+        {
+          "orden": 2,
+          "que": "Pide que un funcionario competente del INPE certifique tu documento. Pregunta si esa firma está registrada ante el MRE y es válida para el exterior. Si te dicen que NO, pide que te indiquen la oficina o la persona cuya firma SÍ esté registrada ante el MRE.",
+          "entidad": "INPE",
+          "donde": "Jr. Carabaya N° 456, Lima",
+          "telefono": "(01) 426-1578",
+          "dias_estimados": 2,
+          "costo": 0,
+          "verificar_firma": true
+        },
+        {
+          "orden": 3,
+          "que": "Lleva tu documento al MRE para apostillarlo o legalizarlo (apostilla si el país de destino pertenece al Convenio de La Haya; legalización si no).",
+          "entidad": "MRE",
+          "donde": "MRE - Trámites Consulares / Centro MAC",
+          "dias_estimados": 1,
+          "costo": 31
+        }
+      ],
+      "vigencia_sugerida_meses": null,
+      "gratuidad": false,
+      "depende_pais": true,
+      "fuente": "cadena-de-certificaciones.pdf, caso 13"
+    },
+    {
+      "id": "antecedentes_policiales",
+      "nombre_ciudadano": "Certificado de antecedentes policiales (para el extranjero)",
+      "categoria": "antecedentes",
+      "icono": "antecedentes",
+      "pasos": [
+        {
+          "orden": 1,
+          "que": "Acude a la Dirección de Criminalística de la Policía Nacional del Perú (PNP) y solicita tu certificado de antecedentes policiales para el extranjero.",
+          "entidad": "PNP - Dirección de Criminalística",
+          "donde": "Av. Aramburú N° 550, Surquillo, Lima",
+          "telefono": "(01) 222-7364",
+          "dias_estimados": 0,
+          "costo": 0,
+          "tip": "Si puedes, llama antes al (01) 222-7364 para confirmar el horario de atención y qué necesitas llevar."
+        },
+        {
+          "orden": 2,
+          "que": "Pide que el Jefe del Departamento de Antecedentes Policiales certifique tu documento. Pregunta si esa firma está registrada ante el MRE y es válida para el exterior. Si te dicen que NO, pide que te indiquen la oficina o persona cuya firma SÍ esté registrada ante el MRE.",
+          "entidad": "PNP - Dirección de Criminalística",
+          "donde": "Av. Aramburú N° 550, Surquillo, Lima",
+          "telefono": "(01) 222-7364",
+          "dias_estimados": 2,
+          "costo": 0,
+          "verificar_firma": true
+        },
+        {
+          "orden": 3,
+          "que": "Lleva tu documento al MRE para apostillarlo o legalizarlo (apostilla si el país de destino pertenece al Convenio de La Haya; legalización si no).",
+          "entidad": "MRE",
+          "donde": "MRE - Trámites Consulares / Centro MAC",
+          "dias_estimados": 1,
+          "costo": 31
+        }
+      ],
+      "vigencia_sugerida_meses": null,
+      "gratuidad": false,
+      "depende_pais": true,
+      "fuente": "cadena-de-certificaciones.pdf, caso 14"
+    },
+    {
+      "id": "migraciones",
+      "nombre_ciudadano": "Documento de Migraciones (movimiento migratorio, etc.)",
+      "categoria": "migraciones",
+      "icono": "migraciones",
+      "pasos": [
+        {
+          "orden": 1,
+          "que": "Acude a una oficina de la Superintendencia Nacional de Migraciones y solicita tu documento (por ejemplo, tu certificado de movimiento migratorio).",
+          "entidad": "Superintendencia Nacional de Migraciones",
+          "donde": "Av. España N° 731, Breña, Lima",
+          "telefono": "(01) 417-6900",
+          "dias_estimados": 0,
+          "costo": 0
+        },
+        {
+          "orden": 2,
+          "que": "Pide que el Certificador del área competente de Migraciones certifique tu documento.",
+          "entidad": "Superintendencia Nacional de Migraciones",
+          "donde": "Av. España N° 731, Breña, Lima",
+          "telefono": "(01) 417-6900",
+          "dias_estimados": 2,
+          "costo": 0,
+          "verificar_firma": true,
+          "nota": "Pregunta si esa firma está registrada ante el MRE y es válida para el exterior. Si te dicen que NO, pide que te indiquen la oficina o persona de Migraciones cuya firma SÍ esté registrada ante el MRE."
+        },
+        {
+          "orden": 3,
+          "que": "Lleva tu documento ya certificado al MRE para apostillarlo o legalizarlo (apostilla si el país de destino pertenece al Convenio de La Haya; legalización si no).",
+          "entidad": "MRE",
+          "donde": "MRE - Trámites Consulares / Centro MAC",
+          "dias_estimados": 1,
+          "costo": 31
+        }
+      ],
+      "vigencia_sugerida_meses": null,
+      "gratuidad": false,
+      "depende_pais": true,
+      "fuente": "cadena-de-certificaciones.pdf, caso 15"
+    },
+    {
+      "id": "notarial",
+      "nombre_ciudadano": "Documento notarial (escritura, poder, legalización de firma, copia certificada)",
+      "categoria": "notarial",
+      "icono": "notarial",
+      "ramificacion": {
+        "pregunta": "¿Quieres la ruta más rápida?",
+        "ayuda": "Ambas valen ante el MRE; la Junta de Decanos suele ser más rápida.",
+        "opciones": [
+          {
+            "texto": "Sí, la más rápida (Junta de Decanos)",
+            "set": {
+              "subtipo": "junta"
+            }
+          },
+          {
+            "texto": "La estándar (mi Colegio de Notarios)",
+            "set": {
+              "subtipo": "colegio"
+            }
+          }
+        ]
+      },
+      "pasos": [
+        {
+          "orden": 1,
+          "que": "Acude a la notaría donde se otorgó tu documento (la escritura, el poder, la legalización de firma o la copia certificada).",
+          "entidad": "Notaría",
+          "donde": "La notaría donde se otorgó el documento",
+          "dias_estimados": 0,
+          "costo": 0
+        },
+        {
+          "orden": 2,
+          "que": "Pide que el notario público firme tu documento. Si tu documento tiene más de una página, revisa que lleve el sello de unión entre páginas y/o la numeración correlativa; sin eso lo pueden rechazar más adelante.",
+          "entidad": "Notaría",
+          "donde": "La notaría donde se otorgó el documento",
+          "dias_estimados": 1,
+          "costo": 0,
+          "nota": "Si tiene más de una página: debe llevar sello de unión y/o numeración correlativa."
+        },
+        {
+          "orden": 3,
+          "que": "Si elegiste la ruta más rápida: acude a la Junta de Decanos de los Colegios de Notarios del Perú.",
+          "entidad": "Junta de Decanos de los Colegios de Notarios del Perú",
+          "donde": "Paseo de la República N° 3565, Of. 801-802, San Isidro, Lima",
+          "telefono": "(01) 422-8160",
+          "dias_estimados": 0,
+          "costo": 0,
+          "solo_subtipo": "junta"
+        },
+        {
+          "orden": 4,
+          "que": "Pide que la Junta de Decanos certifique la firma del notario que firmó tu documento. Pregunta también si esa firma está registrada ante el MRE y es válida para el exterior; si te dicen que NO, pide que te indiquen la oficina o persona cuya firma SÍ esté registrada ante el MRE.",
+          "entidad": "Junta de Decanos de los Colegios de Notarios del Perú",
+          "donde": "Paseo de la República N° 3565, Of. 801-802, San Isidro, Lima",
+          "telefono": "(01) 422-8160",
+          "dias_estimados": 1,
+          "costo": 0,
+          "verificar_firma": true,
+          "tip": "La Junta de Decanos suele resolver el mismo día o en 1 día.",
+          "solo_subtipo": "junta"
+        },
+        {
+          "orden": 5,
+          "que": "Si elegiste la ruta estándar: acude al Colegio de Notarios de tu jurisdicción.",
+          "entidad": "Colegio de Notarios",
+          "donde": "El Colegio de Notarios de tu jurisdicción",
+          "dias_estimados": 0,
+          "costo": 0,
+          "solo_subtipo": "colegio"
+        },
+        {
+          "orden": 6,
+          "que": "Pide que el Colegio de Notarios certifique la firma del notario que firmó tu documento. Pregunta también si esa firma está registrada ante el MRE y es válida para el exterior; si te dicen que NO, pide que te indiquen la oficina o persona cuya firma SÍ esté registrada ante el MRE.",
+          "entidad": "Colegio de Notarios",
+          "donde": "El Colegio de Notarios de tu jurisdicción",
+          "dias_estimados": 2,
+          "costo": 0,
+          "verificar_firma": true,
+          "error_frecuente": "Llevar el documento solo con la firma del notario, sin la del Colegio de Notarios. Es la causa de rechazo más común.",
+          "solo_subtipo": "colegio"
+        },
+        {
+          "orden": 7,
+          "que": "Lleva tu documento al MRE para apostillarlo o legalizarlo (apostilla si el país de destino pertenece al Convenio de La Haya; legalización si no).",
+          "entidad": "MRE",
+          "donde": "MRE - Trámites Consulares / Centro MAC",
+          "dias_estimados": 1,
+          "costo": 31
+        }
+      ],
+      "vigencia_sugerida_meses": null,
+      "gratuidad": false,
+      "depende_pais": true,
+      "fuente": "cadena-de-certificaciones.pdf, caso 16"
+    },
+    {
+      "id": "trabajo",
+      "nombre_ciudadano": "Constancia de trabajo o de prácticas",
+      "categoria": "trabajo",
+      "icono": "trabajo",
+      "ramificacion": {
+        "pregunta": "¿Quién la emitió?",
+        "opciones": [
+          {
+            "texto": "Una institución pública",
+            "set": {
+              "subtipo": "publica"
+            }
+          },
+          {
+            "texto": "Una empresa privada, hace menos de 3 años",
+            "set": {
+              "subtipo": "privada_reciente"
+            }
+          },
+          {
+            "texto": "Una empresa privada, hace más de 3 años",
+            "set": {
+              "subtipo": "privada_antigua"
+            }
+          }
+        ]
+      },
+      "pasos": [
+        {
+          "orden": 1,
+          "que": "Acude a la institución pública que emitió tu constancia de trabajo o de prácticas.",
+          "entidad": "Institución pública emisora",
+          "donde": "La institución que la emitió",
+          "dias_estimados": 0,
+          "costo": 0,
+          "solo_subtipo": "publica"
+        },
+        {
+          "orden": 2,
+          "que": "Pide que el fedatario de esa institución certifique tu constancia con su firma y sello. Luego pregunta si esa firma está registrada ante el MRE y es válida para el exterior. Si te dicen que NO, pide que te indiquen la oficina o persona cuya firma SÍ esté registrada ante el MRE.",
+          "entidad": "Institución pública emisora",
+          "donde": "La institución que la emitió",
+          "dias_estimados": 2,
+          "costo": 0,
+          "verificar_firma": true,
+          "solo_subtipo": "publica"
+        },
+        {
+          "orden": 1,
+          "que": "Acude a una notaría con tu constancia de trabajo o de prácticas (empresa privada, emitida hace menos de 3 años).",
+          "entidad": "Notaría",
+          "donde": "La notaría donde se legaliza la firma",
+          "dias_estimados": 0,
+          "costo": 0,
+          "solo_subtipo": "privada_reciente"
+        },
+        {
+          "orden": 2,
+          "que": "Pide que el notario público legalice la firma del representante de la empresa que firmó tu constancia.",
+          "entidad": "Notaría",
+          "donde": "La notaría donde se legaliza la firma",
+          "dias_estimados": 1,
+          "costo": 0,
+          "solo_subtipo": "privada_reciente"
+        },
+        {
+          "orden": 3,
+          "que": "Lleva tu documento a la Junta de Decanos de los Colegios de Notarios del Perú (es la ruta más rápida; tu Colegio de Notarios también vale, pero suele demorar más).",
+          "entidad": "Junta de Decanos de los Colegios de Notarios del Perú",
+          "donde": "Paseo de la República N° 3565, Of. 801-802, San Isidro, Lima",
+          "telefono": "(01) 422-8160",
+          "dias_estimados": 0,
+          "costo": 0,
+          "tip": "La Junta de Decanos suele resolver el mismo día o en 1 día.",
+          "solo_subtipo": "privada_reciente"
+        },
+        {
+          "orden": 4,
+          "que": "Pide que la Junta de Decanos certifique la firma del notario. Luego pregunta si esa firma está registrada ante el MRE y es válida para el exterior. Si te dicen que NO, pide que te indiquen la oficina o persona cuya firma SÍ esté registrada ante el MRE.",
+          "entidad": "Junta de Decanos de los Colegios de Notarios del Perú",
+          "donde": "Paseo de la República N° 3565, Of. 801-802, San Isidro, Lima",
+          "telefono": "(01) 422-8160",
+          "dias_estimados": 1,
+          "costo": 0,
+          "verificar_firma": true,
+          "error_frecuente": "Llevar el documento solo con la firma del notario, sin la certificación del Colegio o Junta de Notarios. Es la causa de rechazo más común.",
+          "solo_subtipo": "privada_reciente"
+        },
+        {
+          "orden": 1,
+          "que": "Acude al Ministerio de Trabajo (MINTRA) con tu constancia de trabajo o de prácticas (empresa privada, emitida hace más de 3 años).",
+          "entidad": "Ministerio de Trabajo (MINTRA)",
+          "donde": "Av. Gral. Salaverry 655, Jesús María, Lima",
+          "telefono": "(01) 630-6000 anexo 1066 / 1099",
+          "dias_estimados": 0,
+          "costo": 0,
+          "solo_subtipo": "privada_antigua"
+        },
+        {
+          "orden": 2,
+          "que": "Pide que el fedatario o certificador del Ministerio de Trabajo certifique tu constancia. Luego pregunta si esa firma está registrada ante el MRE y es válida para el exterior. Si te dicen que NO, pide que te indiquen la oficina o persona cuya firma SÍ esté registrada ante el MRE.",
+          "entidad": "Ministerio de Trabajo (MINTRA)",
+          "donde": "Av. Gral. Salaverry 655, Jesús María, Lima",
+          "telefono": "(01) 630-6000 anexo 1066 / 1099",
+          "dias_estimados": 2,
+          "costo": 0,
+          "verificar_firma": true,
+          "solo_subtipo": "privada_antigua"
+        },
+        {
+          "orden": 5,
+          "que": "Lleva tu documento al MRE para apostillarlo o legalizarlo (apostilla si el país de destino pertenece al Convenio de La Haya; legalización si no).",
+          "entidad": "MRE",
+          "donde": "MRE - Trámites Consulares / Centro MAC",
+          "dias_estimados": 1,
+          "costo": 31
+        }
+      ],
+      "vigencia_sugerida_meses": null,
+      "gratuidad": false,
+      "depende_pais": true,
+      "fuente": "cadena-de-certificaciones.pdf, caso 17"
+    },
+    {
+      "id": "funcionario_estado",
+      "nombre_ciudadano": "Otro documento de una institución del Estado",
+      "categoria": "estado",
+      "icono": "estado",
+      "pasos": [
+        {
+          "orden": 1,
+          "que": "Acude a la institución del Estado que emitió tu documento y pregunta por el área que certifica documentos para el exterior (busca al fedatario o certificador).",
+          "entidad": "La entidad emisora",
+          "donde": "La institución del Estado que emitió el documento",
+          "dias_estimados": 0,
+          "costo": 0,
+          "nota": "Importante: si tu documento es una copia de un acto registral de una municipalidad (por ejemplo, una partida), solo lo puede certificar el registrador civil de esa misma municipalidad."
+        },
+        {
+          "orden": 2,
+          "que": "Pide que el fedatario o certificador del área competente firme y certifique tu documento.",
+          "entidad": "La entidad emisora",
+          "donde": "La institución del Estado que emitió el documento",
+          "dias_estimados": 2,
+          "costo": 0,
+          "verificar_firma": true,
+          "nota": "Pregunta si esa firma está registrada ante el MRE y es válida para el exterior. Si te dicen que NO, pide que te indiquen la oficina o persona cuya firma SÍ esté registrada ante el MRE."
+        },
+        {
+          "orden": 3,
+          "que": "Lleva tu documento ya certificado al MRE para apostillarlo o legalizarlo (apostilla si el país de destino pertenece al Convenio de La Haya; legalización si no).",
+          "entidad": "MRE",
+          "donde": "MRE - Trámites Consulares / Centro MAC",
+          "dias_estimados": 1,
+          "costo": 31
+        }
+      ],
+      "vigencia_sugerida_meses": null,
+      "gratuidad": false,
+      "depende_pais": true,
+      "fuente": "cadena-de-certificaciones.pdf, caso 18"
+    },
+    {
+      "id": "judicial",
+      "nombre_ciudadano": "Documento judicial (actuados, sentencias, expedientes)",
+      "categoria": "judicial",
+      "icono": "judicial",
+      "pasos": [
+        {
+          "orden": 1,
+          "que": "Acude a la Corte Superior de Justicia de la jurisdicción donde se tramitó tu caso y solicita una copia certificada de tu documento judicial (la sentencia, el expediente o el acta que necesitas).",
+          "entidad": "Poder Judicial - Corte Superior",
+          "donde": "La Corte Superior de Justicia de la jurisdicción",
+          "dias_estimados": 0,
+          "costo": 0,
+          "tip": "Ve a la mesa de partes o a Informes y pregunta a qué oficina debes solicitar la copia certificada para uso en el extranjero. Lleva tu DNI y los datos del caso (por ejemplo, el número de expediente)."
+        },
+        {
+          "orden": 2,
+          "que": "Pide que el funcionario competente y el Presidente de la Corte Superior de Justicia certifiquen y firmen tu documento. Esa firma debe estar registrada en Cancillería (ante el MRE).",
+          "entidad": "Poder Judicial - Corte Superior",
+          "donde": "La Corte Superior de Justicia de la jurisdicción",
+          "dias_estimados": 3,
+          "costo": 0,
+          "verificar_firma": true
+        },
+        {
+          "orden": 3,
+          "que": "Pregunta si esa firma está registrada ante el MRE y es válida para el exterior. Si te dicen que NO, pide que te indiquen la oficina o la persona cuya firma SÍ esté registrada ante el MRE, y consigue esa certificación antes de continuar.",
+          "entidad": "Poder Judicial - Corte Superior",
+          "donde": "La Corte Superior de Justicia de la jurisdicción",
+          "dias_estimados": 0,
+          "costo": 0,
+          "verificar_firma": true
+        },
+        {
+          "orden": 4,
+          "que": "Lleva tu documento ya certificado al MRE para apostillarlo o legalizarlo. Será apostilla si el país de destino pertenece al Convenio de La Haya, o legalización si no pertenece.",
+          "entidad": "MRE",
+          "donde": "MRE - Trámites Consulares / Centro MAC",
+          "dias_estimados": 1,
+          "costo": 31
+        }
+      ],
+      "vigencia_sugerida_meses": null,
+      "gratuidad": false,
+      "depende_pais": true,
+      "fuente": "cadena-de-certificaciones.pdf, caso 19"
+    },
+    {
+      "id": "traduccion_tpj",
+      "nombre_ciudadano": "Traducción hecha por un Traductor Público Juramentado (TPJ)",
+      "categoria": "traduccion",
+      "icono": "traduccion",
+      "pasos": [
+        {
+          "orden": 1,
+          "que": "Antes de traducir, revisa que tu documento ORIGINAL ya tenga lista toda su propia cadena de certificación (o, si viene del extranjero, que ya tenga la apostilla del país de origen).",
+          "entidad": "Según el documento original",
+          "donde": "Depende del tipo de documento original",
+          "dias_estimados": 0,
+          "costo": 0,
+          "error_frecuente": "Mandar a traducir un documento que todavía no tiene su cadena completa. El original debe estar 100% listo ANTES de traducirlo; si no, perderás tiempo y dinero.",
+          "tip": "Si no sabes qué cadena necesita tu original, busca primero el tipo de documento que tienes (partida, título, antecedentes, etc.) y termina esa ruta antes de seguir."
+        },
+        {
+          "orden": 2,
+          "que": "Ubica un Traductor Público Juramentado (TPJ) en el directorio oficial del MRE.",
+          "entidad": "Traductor Público Juramentado",
+          "donde": "Directorio oficial de TPJ del MRE",
+          "dias_estimados": 0,
+          "costo": 0,
+          "nota": "Solo sirve un Traductor Público Juramentado (TPJ); su firma ya está registrada en Cancillería. Un traductor cualquiera NO vale para este trámite."
+        },
+        {
+          "orden": 3,
+          "que": "Pide al TPJ que traduzca tu documento y que una formalmente el original con la traducción.",
+          "entidad": "Traductor Público Juramentado",
+          "donde": "Directorio oficial de TPJ del MRE",
+          "dias_estimados": 2,
+          "costo": 0,
+          "verificar_firma": true,
+          "nota": "Pide la traducción en formato digital si puedes: suele salir más rápido que la física. Pregunta al TPJ si su firma está registrada ante el MRE y es válida para el exterior. Si te dicen que NO, pide que te indiquen un TPJ cuya firma SÍ esté registrada ante el MRE."
+        },
+        {
+          "orden": 4,
+          "que": "Lleva el documento traducido y unido al MRE para apostillarlo o legalizarlo (apostilla si el país de destino pertenece al Convenio de La Haya; legalización si no). El MRE valida la firma del TPJ.",
+          "entidad": "MRE",
+          "donde": "MRE - Trámites Consulares / Centro MAC",
+          "dias_estimados": 1,
+          "costo": 31
+        }
+      ],
+      "vigencia_sugerida_meses": null,
+      "gratuidad": false,
+      "depende_pais": true,
+      "fuente": "cadena-de-certificaciones.pdf, caso 20"
+    },
+    {
+      "id": "traduccion_colegio",
+      "nombre_ciudadano": "Traducción certificada (traductor del Colegio de Traductores)",
+      "categoria": "traduccion",
+      "icono": "traduccion",
+      "pasos": [
+        {
+          "orden": 1,
+          "que": "Primero, asegúrate de que tu documento ORIGINAL ya tenga lista TODA su cadena de certificación (las firmas y certificaciones que le corresponden según su tipo). Recién cuando el original esté completo puedes mandarlo a traducir.",
+          "entidad": "Según el documento original",
+          "donde": "Depende del tipo de documento original",
+          "dias_estimados": 0,
+          "costo": 0,
+          "error_frecuente": "Mandar a traducir el documento antes de que el original tenga su cadena completa. El original debe estar 100% listo ANTES de traducir; si no, perderás tiempo y dinero."
+        },
+        {
+          "orden": 2,
+          "que": "Busca un traductor que pertenezca al Colegio de Traductores del Perú (un traductor colegiado).",
+          "entidad": "Traductor colegiado",
+          "donde": "Colegio de Traductores del Perú",
+          "dias_estimados": 0,
+          "costo": 0
+        },
+        {
+          "orden": 3,
+          "que": "Pide al traductor colegiado que traduzca tu documento y que una (engrape o adjunte) el original junto con la traducción, formando un solo paquete.",
+          "entidad": "Traductor colegiado",
+          "donde": "Colegio de Traductores del Perú",
+          "dias_estimados": 1,
+          "costo": 0
+        },
+        {
+          "orden": 4,
+          "que": "Acude al Colegio de Traductores del Perú con tu traducción ya hecha.",
+          "entidad": "Colegio de Traductores del Perú",
+          "donde": "Colegio de Traductores del Perú",
+          "dias_estimados": 0,
+          "costo": 0
+        },
+        {
+          "orden": 5,
+          "que": "Pide que el representante del Colegio de Traductores del Perú legalice la firma de tu traductor. Esa firma del representante ya está registrada en Cancillería del MRE. Pregunta si esa firma está registrada ante el MRE y es válida para el exterior; si te dicen que NO, pide que te indiquen la oficina o persona del Colegio cuya firma SÍ esté registrada ante el MRE.",
+          "entidad": "Colegio de Traductores del Perú",
+          "donde": "Colegio de Traductores del Perú",
+          "dias_estimados": 1,
+          "costo": 0,
+          "verificar_firma": true,
+          "tip": "Pide la carátula con firma digital de la decana: sale más rápido que la versión física, que exige llevar el documento al Colegio."
+        },
+        {
+          "orden": 6,
+          "que": "Lleva tu documento ya traducido y legalizado al MRE para apostillarlo o legalizarlo (apostilla si el país de destino pertenece al Convenio de La Haya; legalización si no pertenece).",
+          "entidad": "MRE",
+          "donde": "MRE - Trámites Consulares / Centro MAC",
+          "dias_estimados": 1,
+          "costo": 31
+        }
+      ],
+      "vigencia_sugerida_meses": null,
+      "gratuidad": false,
+      "depende_pais": true,
+      "fuente": "cadena-de-certificaciones.pdf, caso 21"
+    },
+    {
+      "id": "consular_peruano",
+      "nombre_ciudadano": "Documento emitido por un consulado peruano en el exterior",
+      "categoria": "extranjero_consular",
+      "icono": "consular",
+      "pasos": [
+        {
+          "orden": 1,
+          "que": "Revisa tu documento: si lo emitió un consulado peruano en el exterior, ya debe traer la firma del funcionario consular peruano. Esa firma normalmente ya está registrada en la Cancillería del MRE, así que NO necesitas legalizarla en ningún otro lugar antes de ir al MRE.",
+          "entidad": "Consulado peruano",
+          "donde": "El consulado peruano que lo emitió",
+          "dias_estimados": 0,
+          "costo": 0,
+          "nota": "A diferencia de otros documentos, este no pasa por pasos intermedios: del consulado va directo al MRE."
+        },
+        {
+          "orden": 2,
+          "que": "Antes de seguir, asegúrate de que la firma del funcionario consular esté registrada ante el MRE y sea válida para el exterior. Pregunta en el consulado (o en Informes del MRE) si esa firma figura registrada en la Cancillería del MRE. Si te dicen que NO, pide que te indiquen la oficina o la persona cuya firma SÍ esté registrada ante el MRE.",
+          "entidad": "Consulado peruano",
+          "donde": "El consulado peruano que lo emitió",
+          "dias_estimados": 0,
+          "costo": 0,
+          "verificar_firma": true
+        },
+        {
+          "orden": 3,
+          "que": "Lleva tu documento al MRE para apostillarlo o legalizarlo. Será apostilla si el país de destino pertenece al Convenio de La Haya; será legalización si el país no pertenece.",
+          "entidad": "MRE",
+          "donde": "MRE - Trámites Consulares / Centro MAC",
+          "dias_estimados": 1,
+          "costo": 31
+        }
+      ],
+      "vigencia_sugerida_meses": null,
+      "gratuidad": false,
+      "depende_pais": true,
+      "fuente": "cadena-de-certificaciones.pdf, caso 22"
+    },
+    {
+      "id": "consular_extranjero",
+      "nombre_ciudadano": "Documento de un funcionario consular extranjero acreditado en Perú",
+      "categoria": "extranjero_consular",
+      "icono": "consular",
+      "pasos": [
+        {
+          "orden": 1,
+          "que": "Acude al consulado extranjero en Perú que emitió tu documento (por ejemplo, el consulado del país que lo expidió).",
+          "entidad": "Consulado extranjero en Perú",
+          "donde": "El consulado extranjero que lo emitió",
+          "dias_estimados": 0,
+          "costo": 0
+        },
+        {
+          "orden": 2,
+          "que": "Revisa que tu documento ya traiga la firma del funcionario consular extranjero acreditado. Pregunta si esa firma está registrada ante el MRE y es válida para el exterior. Si te dicen que NO, pide que te indiquen la oficina o persona del consulado cuya firma SÍ esté registrada ante el MRE.",
+          "entidad": "Consulado extranjero en Perú",
+          "donde": "El consulado extranjero que lo emitió",
+          "dias_estimados": 0,
+          "costo": 0,
+          "verificar_firma": true,
+          "nota": "Con la firma del funcionario consular acreditado, tu documento ya está listo para pasar al MRE: no necesita otra firma previa."
+        },
+        {
+          "orden": 3,
+          "que": "Lleva tu documento al MRE para legalizarlo. En este caso es legalización (no apostilla), porque es un documento de un consulado extranjero.",
+          "entidad": "MRE",
+          "donde": "MRE - Trámites Consulares / Centro MAC",
+          "dias_estimados": 1,
+          "costo": 31
+        }
+      ],
+      "vigencia_sugerida_meses": null,
+      "gratuidad": false,
+      "depende_pais": false,
+      "fuente": "cadena-de-certificaciones.pdf, caso 23"
+    },
+    {
+      "id": "extranjero_legalizado_consulado_extranjero",
+      "nombre_ciudadano": "Documento extranjero legalizado por un consulado extranjero en Perú",
+      "categoria": "extranjero_consular",
+      "icono": "consular",
+      "pasos": [
+        {
+          "orden": 1,
+          "que": "Acude al consulado extranjero en Peru que va a legalizar tu documento (el consulado del pais que emitio ese documento).",
+          "entidad": "Consulado extranjero en Peru",
+          "donde": "El consulado extranjero",
+          "dias_estimados": 0,
+          "costo": 0
+        },
+        {
+          "orden": 2,
+          "que": "Pide que el funcionario consular extranjero firme y legalice tu documento. Paga ahi mismo el Reintegro Consular que te indiquen y guarda el comprobante; sin esa firma y ese pago el MRE no podra legalizarlo despues.",
+          "entidad": "Consulado extranjero en Peru",
+          "donde": "El consulado extranjero",
+          "dias_estimados": 0,
+          "costo": 0,
+          "nota": "El Reintegro Consular tiene tarifas que cambian segun el tipo de documento (aproximadamente entre US$ 10 y US$ 37.5). Pregunta en el consulado el monto exacto antes de pagar; el detalle oficial esta en el PDF del MRE."
+        },
+        {
+          "orden": 3,
+          "que": "Lleva tu documento ya firmado por el consulado extranjero al MRE para que lo legalicen (en este caso es legalizacion, no apostilla, porque es un documento legalizado por un consulado extranjero).",
+          "entidad": "MRE",
+          "donde": "MRE - Tramites Consulares / Centro MAC",
+          "dias_estimados": 1,
+          "costo": 31
+        }
+      ],
+      "vigencia_sugerida_meses": null,
+      "gratuidad": false,
+      "depende_pais": false,
+      "fuente": "cadena-de-certificaciones.pdf, caso 24"
+    },
+    {
+      "id": "extranjero_certificado_consulado_peruano",
+      "nombre_ciudadano": "Documento extranjero certificado por un consulado peruano en el exterior",
+      "categoria": "extranjero_consular",
+      "icono": "consular",
+      "pasos": [
+        {
+          "orden": 1,
+          "que": "Revisa tu documento: debe tener la firma del funcionario del consulado peruano que lo certifico en el exterior. No necesitas legalizarlo antes en ninguna otra oficina.",
+          "entidad": "Consulado peruano en el exterior",
+          "donde": "El consulado peruano que lo certifico",
+          "dias_estimados": 0,
+          "costo": 0,
+          "verificar_firma": true,
+          "nota": "La firma del funcionario consular peruano ya esta registrada en Cancilleria, por eso no requiere un paso de legalizacion previo."
+        },
+        {
+          "orden": 2,
+          "que": "Confirma que esa firma del consulado peruano este registrada ante el MRE y sea valida para el exterior. Si te dicen que NO, pide que te indiquen la oficina o persona cuya firma SI este registrada ante el MRE.",
+          "entidad": "Consulado peruano en el exterior",
+          "donde": "El consulado peruano que lo certifico",
+          "dias_estimados": 0,
+          "costo": 0,
+          "verificar_firma": true
+        },
+        {
+          "orden": 3,
+          "que": "Revisa la vigencia de tu documento antes de tramitarlo: la carta poder dura 3 meses; el poder fuera de registro dura 1 ano; la escritura publica vale hasta que se revoque.",
+          "entidad": "Consulado peruano en el exterior",
+          "donde": "El consulado peruano que lo certifico",
+          "dias_estimados": 0,
+          "costo": 0,
+          "nota": "Si tu documento ya vencio, vuelve a tramitar uno nuevo antes de seguir."
+        },
+        {
+          "orden": 4,
+          "que": "Lleva tu documento al MRE para legalizarlo (es legalizacion, no apostilla, porque la firma viene de un consulado peruano). Pregunta en Informes del MRE si tu caso aplica a la legalizacion gratuita.",
+          "entidad": "MRE",
+          "donde": "MRE - Tramites Consulares / Centro MAC",
+          "dias_estimados": 1,
+          "costo": 0,
+          "nota": "Es GRATIS la legalizacion de la firma consular cuando se trata de titulos o certificados de estudio de peruanos."
+        }
+      ],
+      "vigencia_sugerida_meses": null,
+      "gratuidad": "Gratis para legalización de firma consular sobre estudios de peruanos.",
+      "depende_pais": false,
+      "fuente": "cadena-de-certificaciones.pdf, caso 25"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "_meta": {
+    "descripcion": "Atajos legítimos y tips de campo (conocimiento tácito que hoy solo tienen los intermediarios). Fuente: reunión con empresa tramitadora — AGENTE §4.3.",
+    "aviso": "Son orientaciones de campo, no garantías. El agente nunca promete tiempos; ofrece la opción y advierte honestamente.",
+    "aplica_a": "Cada tip se muestra cuando 'aplica_a' contiene 'todos', el id de una cadena (p. ej. 'traduccion_colegio') o el id de una categoría (p. ej. 'notarial', 'trabajo')."
+  },
+  "tips_urgencia": [
+    {
+      "id": "junta_decanos",
+      "titulo": "Usa la Junta de Decanos en vez del Colegio de Notarios",
+      "aplica_a": ["notarial", "trabajo"],
+      "detalle": "Para documentos notariales, la Junta de Decanos de los Colegios de Notarios certifica la firma del notario igual que el Colegio, pero suele hacerlo el mismo día o en 1 día (el Colegio puede demorar 2). Mucha gente no la conoce.",
+      "ahorro": "Hasta 1 día",
+      "ahorro_dias": 1
+    },
+    {
+      "id": "apostilla_digital",
+      "titulo": "Apostilla Digital (en línea)",
+      "aplica_a": ["todos"],
+      "detalle": "El MRE tiene una plataforma para apostillar/legalizar documentos en línea. El documento debe ser íntegramente digital (con firma digital verificable). El pago del derecho se hace en Págalo.pe. Demora 2-3 días. Útil si ya tienes el documento en formato digital válido.",
+      "costo": 18.0,
+      "fuente": "Tarifa orientativa de la vía digital (Págalo.pe / plataforma del MRE); confírmala al iniciar el trámite.",
+      "enlace": "https://serviciosalciudadano.rree.gob.pe/"
+    },
+    {
+      "id": "centro_mac",
+      "titulo": "Centro MAC (Mejor Atención al Ciudadano)",
+      "aplica_a": ["todos"],
+      "detalle": "En algunos Centros MAC pueden resolver la apostilla el mismo día si hay una urgencia real y demostrable (por ejemplo, llevando el pasaje del viaje próximo). Debe acudir el dueño del documento. NO es garantía.",
+      "advertencia": "No está garantizado; depende del funcionario y de la urgencia demostrable."
+    },
+    {
+      "id": "traduccion_digital",
+      "titulo": "Traducción digital del Colegio de Traductores",
+      "aplica_a": ["traduccion_colegio"],
+      "detalle": "La carátula con firma digital de la decana del Colegio de Traductores sale más rápido que la traducción física (que exige llevar el documento al Colegio, a lo mucho 1 día)."
+    }
+  ],
+  "reglas_de_oro": [
+    "Pregunta siempre en RENIEC: \"¿esta firma es válida para el exterior?\" — las partidas sacadas por internet NO valen, se necesita la firma física del registrador.",
+    "Averigua siempre qué pide la entidad destinataria (universidad, empleador, embajada): a veces no exigen apostilla o aceptan traducción certificada.",
+    "Si tu copia es de SUNARP, la \"autenticación de firma\" solo se hace en la sede central y demora a lo mucho 3 días. Sin ese paso, el MRE rechaza.",
+    "Esta guía te prepara; confirma los requisitos finales en la ventanilla de Informes del MRE."
+  ]
+}

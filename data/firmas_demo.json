@@ -1,0 +1,74 @@
+{
+  "_meta": {
+    "descripcion": "Dataset PUBLICO de demostracion del verificador. Contiene autoridades vigentes REALES (publicas, en ejercicio) y registros SINTETICOS declarados. NO es la lista completa.",
+    "fecha_referencia": "2026-06-12",
+    "registros_reales_vigentes": 4,
+    "registros_sinteticos": 3,
+    "aviso": "Los registros marcados 'sintetico' son ficticios y solo sirven para la demo."
+  },
+  "registros": [
+    {
+      "entidad": "JUNTA DE DECANOS DE LOS COLEGIOS DE NOTARIOS DEL PERU",
+      "nombre": "COLLANTES BECERRA SANTOS ALEJANDRO",
+      "cargo": "PRESIDENTE",
+      "inicio": "20250227",
+      "fin": "20270226",
+      "vigente_ref": true,
+      "sintetico": false
+    },
+    {
+      "entidad": "JUNTA DE DECANOS DE LOS COLEGIOS DE NOTARIOS DEL PERU",
+      "nombre": "MUJICA BARREDA MARIA N J V",
+      "cargo": "REPRESENTANTE DEL PRESIDENTE",
+      "inicio": "20250227",
+      "fin": "20270226",
+      "vigente_ref": true,
+      "sintetico": false
+    },
+    {
+      "entidad": "JUNTA DE DECANOS DE LOS COLEGIOS DE NOTARIOS DEL PERU",
+      "nombre": "QUINTANILLA SALINAS RAMIRO WENCESLAO JUAN MARIA",
+      "cargo": "REPRESENTANTE DEL PRESIDENTE",
+      "inicio": "20250227",
+      "fin": "20270226",
+      "vigente_ref": true,
+      "sintetico": false
+    },
+    {
+      "entidad": "JUNTA DE DECANOS DE LOS COLEGIOS DE NOTARIOS DEL PERU",
+      "nombre": "VILCA MONTEAGUDO ELARD WILFREDO",
+      "cargo": "REPRESENTANTE DEL PRESIDENTE",
+      "inicio": "20250227",
+      "fin": "20270226",
+      "vigente_ref": true,
+      "sintetico": false
+    },
+    {
+      "entidad": "RENIEC",
+      "nombre": "DEMO PEREZ GARCIA MARIA (SINTETICO)",
+      "cargo": "CERTIFICADOR",
+      "inicio": "20250101",
+      "fin": "20271231",
+      "vigente_ref": true,
+      "sintetico": true
+    },
+    {
+      "entidad": "MINISTERIO DE EDUCACION",
+      "nombre": "DEMO QUISPE TORRES JOSE (SINTETICO)",
+      "cargo": "LEGALIZADOR",
+      "inicio": "20250101",
+      "fin": "20271231",
+      "vigente_ref": true,
+      "sintetico": true
+    },
+    {
+      "entidad": "RENIEC",
+      "nombre": "DEMO RAMIREZ SOTO ANA (SINTETICO)",
+      "cargo": "CERTIFICADOR",
+      "inicio": "20161020",
+      "fin": "20171020",
+      "vigente_ref": false,
+      "sintetico": true
+    }
+  ]
+}

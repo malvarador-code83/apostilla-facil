@@ -1,0 +1,23 @@
+# Configuración de Cloudflare Pages (+ Functions) para "Apostilla sin adivinar".
+# Despliegue:  npx wrangler pages deploy .
+#
+# El sitio es estático (HTML/CSS/JS + JSON). Las Functions en functions/api/
+# añaden el verificador de firmas y el clasificador con Workers AI.
+
+name = "apostilla-sin-adivinar"
+compatibility_date = "2024-11-01"
+pages_build_output_dir = "."
+
+# --- Workers AI (clasificador de lenguaje natural, opcional) ---
+[ai]
+binding = "AI"
+
+# --- KV: dataset COMPLETO y privado de autoridades (opcional) ---
+# Crear el namespace y subir el dataset (NO se versiona):
+#   npx wrangler kv namespace create AUTORIDADES
+#   (pega el id devuelto abajo)
+#   npx wrangler kv key put --binding=AUTORIDADES registros --path=data/autoridades.json
+# Si no se configura KV, las Functions usan data/firmas_demo.json (datos de demo).
+[[kv_namespaces]]
+binding = "AUTORIDADES"
+id = "REEMPLAZAR_CON_EL_ID_DEL_NAMESPACE"

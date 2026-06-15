@@ -1,0 +1,41 @@
+{
+  "_meta": {
+    "descripcion": "Explicación general (modelo mental) de cómo un documento peruano se vuelve válido en el exterior. Se muestra ANTES del wizard para que el ciudadano entienda el porqué de los pasos.",
+    "fuente": "Conocimiento experto en trámites y traducción oficial (TPJ). Orientativo: cada país define sus requisitos."
+  },
+  "eyebrow": "Cómo funciona",
+  "titulo": "Cómo tu documento llega válido al exterior",
+  "intro": "Antes de los pasos, la idea de fondo. Si entiendes esto, entiendes cualquier trámite, no solo el tuyo.",
+  "principio": "Todo documento emitido en el Perú, para valer en otro país, necesita la firma de una persona —profesional o funcionario, público o privado— cuya firma esté REGISTRADA en el Ministerio de Relaciones Exteriores (la Cancillería). El MRE actúa como un \"fedatario internacional\": certifica esa firma (la apostilla o la legaliza) y así tu documento tiene validez afuera.",
+  "pasos": [
+    {
+      "titulo": "Tu documento lo firma quien corresponde",
+      "detalle": "Lo firma o certifica un profesional (médico, notario, abogado, decano de facultad, director de colegio…) o un funcionario público (registrador civil, juez, fiscal, SUNEDU, SUNAT…)."
+    },
+    {
+      "titulo": "Esa firma tiene que estar registrada en el MRE",
+      "detalle": "A veces la firma de quien firmó YA está registrada en el MRE y el documento pasa directo. Si no lo está, primero la certifica su superior jerárquico —cuya firma sí está registrada—: Colegio de Notarios, UGEL, SUNEDU, MINSA, Colegio Médico, etc. Por eso a veces hay varios pasos antes de llegar al MRE."
+    },
+    {
+      "titulo": "El MRE la apostilla o la legaliza",
+      "detalle": "Recién con esa firma registrada, el Ministerio de Relaciones Exteriores la certifica: APOSTILLA si el país de destino pertenece al Convenio de La Haya, o LEGALIZACIÓN si no pertenece. Con eso, tu documento ya es válido en el exterior."
+    }
+  ],
+  "traduccion": {
+    "titulo": "¿El país no habla español? Falta un paso: traducir",
+    "intro": "Si tu documento va a un país cuyo idioma oficial no es el español, hay que traducirlo. Existen dos caminos:",
+    "opciones": [
+      {
+        "tipo": "Traductor Público Juramentado (TPJ)",
+        "detalle": "Su firma YA está registrada en el MRE. La traducción se lleva de nuevo al MRE para la legalización final, y queda lista para el exterior."
+      },
+      {
+        "tipo": "Traductor Certificado (Colegio de Traductores)",
+        "detalle": "Su firma NO está registrada en el MRE. Primero la legaliza el Decano o Decana del Colegio de Traductores del Perú; luego el MRE legaliza la firma del Decano(a)."
+      }
+    ],
+    "aviso": "Cada país —y a veces cada región o estado dentro de un mismo país— decide qué traducción acepta: solo TPJ, o TPJ y traducción certificada. Infórmate de lo que exige tu destino ANTES de traducir."
+  },
+  "cierre": "Ese es todo el secreto. El asistente arma esta cadena exacta para tu tipo de documento y tu país de destino, paso a paso.",
+  "cta": "Empezar mi trámite"
+}

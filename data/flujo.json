@@ -1,0 +1,154 @@
+{
+  "_meta": {
+    "descripcion": "Esqueleto del wizard: modos de entrada y categorías ciudadanas. El contenido de cada cadena (pasos, ramificación) vive en cadenas.json.",
+    "fuente": "WIZARD-APOSTILLA-MRE.md §3 y §5.1"
+  },
+  "modo": {
+    "pregunta": "¿En qué te ayudamos hoy?",
+    "opciones": [
+      { "id": "desde_cero", "titulo": "Empezar desde cero", "subtitulo": "No sé qué pasos seguir", "icono": "ruta" },
+      { "id": "verificar", "titulo": "Verificar mi documento", "subtitulo": "Ya lo tengo y quiero revisarlo", "icono": "check" }
+    ]
+  },
+  "categorias": [
+    {
+      "id": "registro_civil", "label": "Partida o acta", "sublabel": "Nacimiento, matrimonio, defunción, soltería", "icono": "acta",
+      "desambiguacion": {
+        "pregunta": "¿Qué documento es y quién lo emitió?",
+        "opciones": [
+          { "texto": "Partida (nacimiento, matrimonio, defunción) de una municipalidad", "cadena_id": "acta_municipal" },
+          { "texto": "Partida emitida directamente por RENIEC", "cadena_id": "acta_reniec" },
+          { "texto": "Certificado de soltería (municipalidad)", "cadena_id": "solteria_municipal" },
+          { "texto": "Constancia de matrimonio de RENIEC", "cadena_id": "constancia_matrimonio_reniec" }
+        ]
+      }
+    },
+    {
+      "id": "universidad", "label": "Título de universidad", "sublabel": "Grados y certificados universitarios", "icono": "universidad",
+      "cadena_id": "titulo_universidad"
+    },
+    {
+      "id": "instituto", "label": "Título de instituto", "sublabel": "Educación superior no universitaria", "icono": "instituto",
+      "desambiguacion": {
+        "pregunta": "¿Qué tipo de documento es?",
+        "opciones": [
+          { "texto": "Título o certificado", "cadena_id": "titulo_instituto" },
+          { "texto": "Constancia u otra certificación", "cadena_id": "constancia_instituto" }
+        ]
+      }
+    },
+    {
+      "id": "colegio", "label": "Certificado de colegio", "sublabel": "Primaria o secundaria", "icono": "colegio",
+      "cadena_id": "certificado_colegio"
+    },
+    {
+      "id": "antecedentes", "label": "Antecedentes", "sublabel": "Penales, judiciales o policiales", "icono": "antecedentes",
+      "desambiguacion": {
+        "pregunta": "¿Qué antecedentes son?",
+        "opciones": [
+          { "texto": "Penales", "cadena_id": "antecedentes_penales" },
+          { "texto": "Judiciales", "cadena_id": "antecedentes_judiciales" },
+          { "texto": "Policiales", "cadena_id": "antecedentes_policiales" }
+        ]
+      }
+    },
+    {
+      "id": "medico", "label": "Certificado médico", "sublabel": "MINSA, EsSalud o particular", "icono": "medico",
+      "cadena_id": "certificado_medico"
+    },
+    {
+      "id": "trabajo", "label": "Documento de trabajo", "sublabel": "Constancia laboral o de prácticas", "icono": "trabajo",
+      "cadena_id": "trabajo"
+    },
+    {
+      "id": "notarial", "label": "Documento notarial", "sublabel": "Escritura, poder, copia certificada", "icono": "notarial",
+      "cadena_id": "notarial"
+    },
+    {
+      "id": "colegio_profesional", "label": "Colegio profesional", "sublabel": "Certificado o constancia", "icono": "colegio_profesional",
+      "cadena_id": "colegio_profesional"
+    },
+    {
+      "id": "migraciones", "label": "Migraciones", "sublabel": "Movimiento migratorio y otros", "icono": "migraciones",
+      "cadena_id": "migraciones"
+    },
+    {
+      "id": "judicial", "label": "Documento judicial", "sublabel": "Actuados, sentencias, expedientes", "icono": "judicial",
+      "cadena_id": "judicial"
+    },
+    {
+      "id": "iglesia", "label": "Documento de iglesia", "sublabel": "Bautismo, confirmación, matrimonio", "icono": "iglesia",
+      "cadena_id": "eclesiastico"
+    },
+    {
+      "id": "traduccion", "label": "Traducción", "sublabel": "De un documento a otro idioma", "icono": "traduccion",
+      "desambiguacion": {
+        "pregunta": "¿Quién hizo la traducción?",
+        "opciones": [
+          { "texto": "Un Traductor Público Juramentado (TPJ) — traducción oficial", "cadena_id": "traduccion_tpj" },
+          { "texto": "Un traductor del Colegio de Traductores — traducción certificada", "cadena_id": "traduccion_colegio" }
+        ]
+      }
+    },
+    {
+      "id": "estado", "label": "Otro documento del Estado", "sublabel": "SUNAT (Declaración de Rentas, Ficha RUC, no adeudo), SUNARP, ministerios, municipalidades…", "icono": "estado",
+      "cadena_id": "funcionario_estado"
+    },
+    {
+      "id": "extranjero_consular", "label": "Documento extranjero o consular", "sublabel": "De un consulado", "icono": "consular",
+      "desambiguacion": {
+        "pregunta": "¿De dónde proviene el documento?",
+        "opciones": [
+          { "texto": "De un consulado peruano en el exterior", "cadena_id": "consular_peruano" },
+          { "texto": "De un consulado extranjero acreditado en Perú", "cadena_id": "consular_extranjero" },
+          { "texto": "Extranjero, legalizado por un consulado extranjero en Perú", "cadena_id": "extranjero_legalizado_consulado_extranjero" },
+          { "texto": "Extranjero, certificado por un consulado peruano en el exterior", "cadena_id": "extranjero_certificado_consulado_peruano" }
+        ]
+      }
+    }
+  ],
+  "diagnostico": {
+    "_comentario": "Los 3 errores más frecuentes (AGENTE §1), como preguntas que el ojo no entrenado SÍ puede responder.",
+    "preguntas": [
+      {
+        "id": "notarial_colegio",
+        "aplica_categoria": ["notarial", "trabajo"],
+        "pregunta": "Además de la firma del notario, ¿ves otra firma o sello del Colegio de Notarios (o de la Junta de Decanos)?",
+        "ayuda": "Suele ser un sello redondo o una etiqueta con otra firma distinta a la del notario.",
+        "si_no": "Te falta la certificación del Colegio de Notarios o de la Junta de Decanos.",
+        "cadena_paso_faltante": "notarial",
+        "detalle_faltante": {
+          "donde": "Colegio de Notarios de tu jurisdicción, o la Junta de Decanos de los Colegios de Notarios (San Isidro, Lima).",
+          "demora": "1 a 2 días hábiles (la Junta de Decanos suele ser más rápida).",
+          "costo": "Según el Colegio/Junta; consúltalo (es aparte de la tasa del MRE)."
+        }
+      },
+      {
+        "id": "fedatario",
+        "aplica_categoria": ["estado", "trabajo"],
+        "pregunta": "¿Hay un sello o firma de un \"fedatario\" de la institución (SUNAT, SUNARP, MINTRA u otra)?",
+        "ayuda": "El fedatario certifica que la copia es fiel al original. Su sello suele decir \"fedatario\".",
+        "si_no": "Te falta la firma del fedatario de la institución.",
+        "cadena_paso_faltante": "funcionario_estado",
+        "detalle_faltante": {
+          "donde": "El fedatario o certificador de la institución que emitió el documento (SUNAT, SUNARP, MINTRA u otra).",
+          "demora": "El mismo día o 1 día hábil.",
+          "costo": "Generalmente gratuito; confírmalo en la institución."
+        }
+      },
+      {
+        "id": "reniec_sticker",
+        "aplica_categoria": ["registro_civil"],
+        "pregunta": "Al reverso del acta, ¿hay una firma y un sticker (etiqueta) de RENIEC?",
+        "ayuda": "Es una etiqueta adhesiva con un código, además de una firma.",
+        "si_no": "Te falta la firma y el sticker del autenticador de RENIEC.",
+        "cadena_paso_faltante": "acta_municipal",
+        "detalle_faltante": {
+          "donde": "Oficina de RENIEC (área de autenticación de firmas).",
+          "demora": "1 día hábil.",
+          "costo": "Según RENIEC; consúltalo (es aparte de la tasa del MRE)."
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "_meta": {
+    "descripcion": "Reglas por país de destino: si requiere apostilla o legalización, y qué tipo de traducción. Determina ramas de la cadena.",
+    "aviso_global": "Estas reglas por país son ORIENTATIVAS (conocimiento de campo, no del PDF oficial del MRE). Confirma SIEMPRE con la entidad destinataria o la embajada antes de iniciar el trámite.",
+    "grupos_traduccion": {
+      "sin_traduccion": {
+        "etiqueta": "No necesita traducción",
+        "detalle": "El destino usa el mismo idioma (español): España y los países hispanohablantes de América Latina. El trámite es más corto y barato."
+      },
+      "con_traduccion": {
+        "etiqueta": "Necesita traducción",
+        "detalle": "El destino usa otro idioma: además de apostillar/legalizar, se traduce el documento (oficial TPJ o certificada TC) y esa traducción también se legaliza ante el MRE."
+      }
+    },
+    "leyenda_traduccion": {
+      "no_requiere": "Mismo idioma: no necesitas traducir.",
+      "certificada_ok": "Acepta traducción certificada (Colegio de Traductores) legalizada por el MRE.",
+      "tpj_recomendado": "Se recomienda traducción oficial de Traductor Público Juramentado (TPJ).",
+      "tpj_obligatorio": "Exige traducción oficial de Traductor Público Juramentado (TPJ).",
+      "enviar_traduccion": "Suele bastar con enviar la traducción, sin apostilla (confirmar con destino)."
+    },
+    "traduccion_pasos": {
+      "titulo": "Falta traducir el documento",
+      "intro": "Si el país de destino no usa el español, después de apostillar/legalizar el documento debes traducirlo, y esa traducción también se legaliza ante el MRE. Elige UNA de estas dos vías (no ambas):",
+      "tpj": {
+        "via": "Traductor Público Juramentado (TPJ)",
+        "pasos": [
+          { "que": "Traduce el documento con un Traductor Público Juramentado (TPJ)", "entidad": "Traductor Público Juramentado", "donde": "Directorio oficial de TPJ del MRE", "dias_estimados": 3, "dias_min": 3, "dias_max": 5, "costo_ref": "aprox. S/ 150 a 300 según el documento (referencial; a veces por hoja, máx. 180 palabras)", "enlace": { "url": "https://www.gob.pe/institucion/rree/colecciones/60818-directorio-de-traductores-publicos-del-peru", "texto": "Directorio oficial de Traductores Públicos Juramentados (MRE)" } },
+          { "que": "Ir a la Oficina del MRE (u oficina autorizada) para una NUEVA apostilla/legalización que valida la firma del TPJ", "entidad": "MRE", "donde": "MRE - Trámites Consulares / Centro MAC", "dias_estimados": 1, "dias_min": 1, "dias_max": 3, "costo": 31, "pago": "Págalo.pe o Banco de la Nación" }
+        ]
+      },
+      "tc": {
+        "via": "Traductor Certificado (Colegio de Traductores)",
+        "pasos": [
+          { "que": "Traduce el documento con un traductor colegiado (TC)", "entidad": "Traductor colegiado", "donde": "Colegio de Traductores del Perú", "dias_estimados": 3, "dias_min": 3, "dias_max": 5, "costo_ref": "aprox. S/ 100 a 150 según el documento (referencial; a veces por hoja, máx. 180 palabras)" },
+          { "que": "Ir al Colegio de Traductores del Perú para que legalice la firma del traductor", "entidad": "Colegio de Traductores del Perú", "donde": "Colegio de Traductores del Perú", "dias_estimados": 1, "dias_min": 1, "dias_max": 2, "costo": 10, "costo_nota": "Es la tarifa de legalización de firma del Colegio; puede variar — confírmala en el Colegio de Traductores.", "enlace": { "url": "https://www.colegiodetraductores.org.pe/legalizacion-de-firma/", "texto": "Tarifa de legalización de firma — Colegio de Traductores" } },
+          { "que": "Ir a la Oficina del MRE (u oficina autorizada) para una NUEVA apostilla/legalización que valida la firma del Decano(a) del Colegio de Traductores", "entidad": "MRE", "donde": "MRE - Trámites Consulares / Centro MAC", "dias_estimados": 1, "dias_min": 1, "dias_max": 3, "costo": 31, "pago": "Págalo.pe o Banco de la Nación" }
+        ],
+        "recordatorio": "La traducción certificada (TC) resulta válida en algunos destinos y en otros no: depende de lo que exija o admita la autoridad en el exterior (a veces por vacíos o desconocimiento). Confírmalo con el destino antes de elegir esta vía."
+      },
+      "aviso_solo_tpj": "Este destino exige TPJ: la traducción certificada (TC) no es aceptada aquí.",
+      "nota_tiempo": "La traducción suele tardar de 3 días a 1 semana, según el volumen; algunos traductores ofrecen servicio express (más caro). El traductor fija el tiempo.",
+      "nota_costo": "Honorario del traductor (referencial): TPJ aprox. S/ 150 a 300; Traductor Certificado aprox. S/ 100 a 150 (según el documento; a veces por hoja de máx. 180 palabras). Aparte, el MRE cobra S/ 31 por la 2.ª apostilla/legalización de la firma del traductor (Págalo.pe o Banco de la Nación)."
+    }
+  },
+  "paises": {
+    "espana": {
+      "nombre": "España",
+      "apostilla": true,
+      "traduccion": "no_requiere",
+      "orientativo": true,
+      "grupo": "hispanohablante",
+      "nota": "Mismo idioma (español): no necesitas traducir el documento. Pertenece al Convenio de La Haya: requiere apostilla."
+    },
+    "argentina": { "nombre": "Argentina", "apostilla": true, "traduccion": "no_requiere", "orientativo": true, "grupo": "hispanohablante", "nota": "Mismo idioma (español): no requiere traducción. Convenio de La Haya: requiere apostilla." },
+    "chile": { "nombre": "Chile", "apostilla": true, "traduccion": "no_requiere", "orientativo": true, "grupo": "hispanohablante", "nota": "Mismo idioma (español): no requiere traducción. Convenio de La Haya: requiere apostilla." },
+    "mexico": { "nombre": "México", "apostilla": true, "traduccion": "no_requiere", "orientativo": true, "grupo": "hispanohablante", "nota": "Mismo idioma (español): no requiere traducción. Convenio de La Haya: requiere apostilla." },
+    "colombia": { "nombre": "Colombia", "apostilla": true, "traduccion": "no_requiere", "orientativo": true, "grupo": "hispanohablante", "nota": "Mismo idioma (español): no requiere traducción. Convenio de La Haya: requiere apostilla." },
+    "bolivia": { "nombre": "Bolivia", "apostilla": true, "traduccion": "no_requiere", "orientativo": true, "grupo": "hispanohablante", "nota": "Mismo idioma (español): no requiere traducción. Convenio de La Haya: requiere apostilla." },
+    "ecuador": { "nombre": "Ecuador", "apostilla": true, "traduccion": "no_requiere", "orientativo": true, "grupo": "hispanohablante", "nota": "Mismo idioma (español): no requiere traducción. Convenio de La Haya: requiere apostilla." },
+    "uruguay": { "nombre": "Uruguay", "apostilla": true, "traduccion": "no_requiere", "orientativo": true, "grupo": "hispanohablante", "nota": "Mismo idioma (español): no requiere traducción. Convenio de La Haya: requiere apostilla." },
+    "paraguay": { "nombre": "Paraguay", "apostilla": true, "traduccion": "no_requiere", "orientativo": true, "grupo": "hispanohablante", "nota": "Mismo idioma (español): no requiere traducción. Convenio de La Haya: requiere apostilla." },
+    "venezuela": { "nombre": "Venezuela", "apostilla": true, "traduccion": "no_requiere", "orientativo": true, "grupo": "hispanohablante", "nota": "Mismo idioma (español): no requiere traducción. Convenio de La Haya: requiere apostilla." },
+    "costa_rica": { "nombre": "Costa Rica", "apostilla": true, "traduccion": "no_requiere", "orientativo": true, "grupo": "hispanohablante", "nota": "Mismo idioma (español): no requiere traducción. Convenio de La Haya: requiere apostilla." },
+    "panama": { "nombre": "Panamá", "apostilla": true, "traduccion": "no_requiere", "orientativo": true, "grupo": "hispanohablante", "nota": "Mismo idioma (español): no requiere traducción. Convenio de La Haya: requiere apostilla." },
+    "guatemala": { "nombre": "Guatemala", "apostilla": true, "traduccion": "no_requiere", "orientativo": true, "grupo": "hispanohablante", "nota": "Mismo idioma (español): no requiere traducción. Convenio de La Haya: requiere apostilla." },
+    "republica_dominicana": { "nombre": "República Dominicana", "apostilla": true, "traduccion": "no_requiere", "orientativo": true, "grupo": "hispanohablante", "nota": "Mismo idioma (español): no requiere traducción. Convenio de La Haya: requiere apostilla." },
+    "italia": {
+      "nombre": "Italia",
+      "apostilla": true,
+      "traduccion": "certificada_ok",
+      "orientativo": true,
+      "grupo": "otro_idioma",
+      "excepciones": [
+        { "region": "Milán (y su región)", "regla": "tpj_obligatorio", "mensaje": "La región de Milán exige traducción OFICIAL (TPJ). El resto de Italia y la embajada aceptan traducción certificada." }
+      ],
+      "nota": "Pertenece al Convenio de La Haya: requiere apostilla. Otro idioma: necesita traducción al italiano."
+    },
+    "alemania": {
+      "nombre": "Alemania",
+      "apostilla": true,
+      "traduccion": "tpj_recomendado",
+      "orientativo": true,
+      "grupo": "otro_idioma",
+      "nota": "Pertenece al Convenio de La Haya. Otro idioma: necesita traducción. En algunos casos no exige legalizar la firma del traductor si lo tiene registrado; confirma con la entidad destino."
+    },
+    "francia": {
+      "nombre": "Francia",
+      "apostilla": true,
+      "traduccion": "tpj_recomendado",
+      "orientativo": true,
+      "grupo": "otro_idioma",
+      "nota": "Pertenece al Convenio de La Haya. Otro idioma: necesita traducción. A veces no exige legalizar la firma del traductor si lo tiene registrado; confirma con el destino."
+    },
+    "austria": { "nombre": "Austria", "apostilla": true, "traduccion": "tpj_recomendado", "orientativo": true, "grupo": "otro_idioma", "nota": "Convenio de La Haya: requiere apostilla. Otro idioma: necesita traducción al alemán." },
+    "suecia": { "nombre": "Suecia", "apostilla": true, "traduccion": "tpj_recomendado", "orientativo": true, "grupo": "otro_idioma", "nota": "Convenio de La Haya: requiere apostilla. Otro idioma: necesita traducción." },
+    "brasil": { "nombre": "Brasil", "apostilla": true, "traduccion": "tpj_recomendado", "orientativo": true, "grupo": "otro_idioma", "nota": "Convenio de La Haya: requiere apostilla. Otro idioma: necesita traducción al portugués." },
+    "estados_unidos": {
+      "nombre": "Estados Unidos",
+      "apostilla": false,
+      "traduccion": "enviar_traduccion",
+      "orientativo": true,
+      "grupo": "anglofono",
+      "nota": "Conocimiento de campo: suele NO requerir apostilla; bastaría enviar la traducción al inglés. CONFIRMA con la entidad destinataria, puede variar por estado/institución."
+    },
+    "canada": { "nombre": "Canadá", "apostilla": false, "traduccion": "enviar_traduccion", "orientativo": true, "grupo": "anglofono", "nota": "Conocimiento de campo: suele NO requerir apostilla. Otro idioma: traducción al inglés/francés. Confirma con el destino." },
+    "australia": { "nombre": "Australia", "apostilla": false, "traduccion": "enviar_traduccion", "orientativo": true, "grupo": "anglofono", "nota": "Conocimiento de campo: suele NO requerir apostilla. Otro idioma: traducción al inglés. Confirma con el destino." },
+    "nueva_zelanda": { "nombre": "Nueva Zelanda", "apostilla": false, "traduccion": "enviar_traduccion", "orientativo": true, "grupo": "anglofono", "nota": "Conocimiento de campo: suele NO requerir apostilla. Otro idioma: traducción al inglés. Confirma con el destino." },
+    "reino_unido": { "nombre": "Reino Unido", "apostilla": false, "traduccion": "enviar_traduccion", "orientativo": true, "grupo": "anglofono", "nota": "País de habla inglesa: a menudo basta con la traducción al inglés. Confirma con el destino." }
+  },
+  "default": {
+    "apostilla": null,
+    "traduccion": "tpj_recomendado",
+    "orientativo": true,
+    "nota": "Si el país pertenece al Convenio de La Haya, necesitarás APOSTILLA; si no, LEGALIZACIÓN. Si el destino no habla español, necesitarás traducción. Verifica la lista del Convenio y consulta a la entidad destinataria qué traducción acepta."
+  }
+}

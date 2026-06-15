@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apostilla Fácil — Sabe qué necesita tu documento antes de ir al Ministerio</title>
+  <meta name="description" content="Guía gratuita que te dice, paso a paso, qué firmas necesita tu documento para apostillarlo o legalizarlo en el Ministerio de Relaciones Exteriores del Perú. Sin jerga, sin intermediarios, sin pedir tus datos." />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <div class="flag-stripe" aria-hidden="true"></div>
+
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="brand" href="./" aria-label="Apostilla Fácil — inicio">
+        <span class="brand-mark" aria-hidden="true">
+          <svg width="30" height="30" viewBox="0 0 30 30" focusable="false" aria-hidden="true">
+            <circle cx="15" cy="15" r="13.5" fill="#16a34a" stroke="#ffffff" stroke-width="1.4"/>
+            <path d="M8.5 15.3 L13 19.8 L21.5 9.8" fill="none" stroke="#ffffff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        <span class="brand-text">
+          <strong>Apostilla Fácil</strong>
+          <small>Prototipo · Hackatón TransformaGob 2026 · Desafío MRE</small>
+        </span>
+      </a>
+      <p class="privacy-badge" title="No te pedimos nombre, DNI ni subimos tu documento a ningún servidor.">
+        🔒 No guardamos tus datos
+      </p>
+    </div>
+  </header>
+
+  <!-- Barra de progreso del wizard -->
+  <div class="progress-wrap container" id="progressWrap" hidden>
+    <div class="progress-bar" role="progressbar" aria-label="Progreso del asistente"
+         aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="progressBar">
+      <span class="progress-fill" id="progressFill"></span>
+    </div>
+    <p class="progress-label" id="progressLabel">Paso 1</p>
+  </div>
+
+  <main id="contenido" class="container main" tabindex="-1">
+    <!-- Región anunciada a lectores de pantalla al cambiar de paso -->
+    <p class="sr-only" aria-live="polite" id="srAnnounce"></p>
+
+    <!-- Aquí el wizard / verificador renderizan cada pantalla -->
+    <div id="app" class="app-stage"></div>
+
+    <!-- Estado de carga / error -->
+    <div id="loadState" class="load-state">
+      <p>Cargando el asistente…</p>
+    </div>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <div class="footer-org">
+        <span class="footer-org-label">Desafío propuesto por:</span>
+        <img class="footer-logo" src="assets/img/mre-logo.png" width="210" height="46"
+             loading="lazy" decoding="async"
+             alt="Ministerio de Relaciones Exteriores del Perú" />
+      </div>
+      <p>
+        Esta guía te <strong>prepara</strong>; no reemplaza la ventanilla. Confirma los requisitos
+        finales en la <strong>ventanilla de Informes del MRE</strong>.
+      </p>
+      <p class="footer-meta">
+        Prototipo demostrativo, sin integración con sistemas del MRE. Código abierto (MIT).
+        Datos de cadenas: <span lang="es">gob.pe / MRE</span>. Reglas por país: orientativas, confirma con el destino.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Datos: bundle generado (funciona al abrir el archivo local). Si no existe, app.js usa fetch. -->
+  <script src="assets/js/data-bundle.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/clasificador.js"></script>
+  <script src="assets/js/wizard.js"></script>
+  <script src="assets/js/resultado.js"></script>
+  <script src="assets/js/diagnostico.js"></script>
+  <script src="assets/js/verificador.js"></script>
+</body>
+</html>

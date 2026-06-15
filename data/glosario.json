@@ -1,0 +1,21 @@
+{
+  "_meta": {
+    "descripcion": "Traducción de la jerga del trámite al lenguaje del ciudadano (objetivo: comprensible en 6.º grado). Fuente: AGENTE §16.",
+    "uso": "Cada término técnico que aparezca en la interfaz puede mostrarse con su definición ciudadana al pasar el cursor o tocar."
+  },
+  "terminos": {
+    "apostilla": "El sello que hace válido tu documento peruano en otro país que pertenece al Convenio de La Haya.",
+    "legalizacion": "Lo mismo que la apostilla, pero para países que NO están en el Convenio de La Haya.",
+    "cadena de certificacion": "La lista de firmas que tu documento necesita, en orden, antes de llegar al Ministerio de Relaciones Exteriores.",
+    "firma habilitada": "Una firma que el Ministerio reconoce porque está registrada y vigente en sus archivos.",
+    "registrada en cancilleria": "Que la firma del funcionario está anotada en el Ministerio de Relaciones Exteriores, que es la \"Cancillería\".",
+    "periodo vigente": "Que la autoridad que firmó todavía estaba en su cargo en la fecha en que firmó tu documento.",
+    "fedatario": "El funcionario de una institución autorizado para certificar que una copia es fiel al original.",
+    "autenticador de firmas (reniec)": "El funcionario de RENIEC que valida la firma de tu partida para que sirva en el exterior.",
+    "junta de decanos": "La entidad de los notarios que certifica firmas notariales, normalmente más rápido que el Colegio de Notarios.",
+    "tpj": "Traductor Público Juramentado: hace la traducción oficial, la que piden destinos como Milán o España.",
+    "traduccion certificada": "Traducción hecha por un traductor del Colegio de Traductores; muchos destinos la aceptan.",
+    "reintegro consular": "Un pago adicional para documentos extranjeros legalizados por un consulado extranjero en Perú.",
+    "pagalo.pe": "La plataforma del Estado donde pagas el derecho del trámite (la tasa)."
+  }
+}

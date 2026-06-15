@@ -1,0 +1,294 @@
+{
+  "_meta": {
+    "descripcion": "Paso 1 'Prepara tu documento': requisitos/condiciones del documento (fuente: PDF oficial Cadena de Certificaciones del MRE) + costo y días de OBTENCIÓN del documento base (referenciales, confirmar en pagalo.pe) + tips de campo. Clave = id de cadena.",
+    "fuente": "MRE — 6570703-cadena-de-certificaciones.pdf (columna REQUISITOS) + tarifas referenciales gob.pe/pagalo.pe (jun-2026).",
+    "aviso_costos": "Los costos y tiempos de obtención son REFERENCIALES y pueden cambiar: confírmalos en pagalo.pe o en la entidad emisora. El derecho del MRE (S/ 31, o gratuito) va aparte."
+  },
+  "requisitos": {
+    "certificado_colegio": {
+      "condiciones": [
+        "Certificado de estudios con código modular y código QR (emitido en línea), o el formato tradicional amarillo (válido solo hasta 2020).",
+        "Debe estar firmado por el director de la I.E. y legalizado por el MINEDU (o por la UGEL + MINEDU si la I.E. cerró).",
+        "Comprobante de pago del derecho de tramitación del MRE."
+      ],
+      "costo_obtencion": null,
+      "costo_nota": "El certificado lo emite tu I.E./UGEL (costo variable). La apostilla en el MRE es GRATIS para peruanos.",
+      "dias_obtencion": "Varía según la I.E. o UGEL.",
+      "comprobante": true,
+      "tip": "Si el destino es España, consíguelo con la firma de la UGEL y del MINEDU antes de ir. Acredita tu condición de peruano para la gratuidad (sin límite de documentos)."
+    },
+    "titulo_instituto": {
+      "condiciones": [
+        "Documento original. Según el año: títulos desde 2016 y certificados desde 2018 los firma el MINEDU; antes, la Dirección Regional competente y el MINEDU.",
+        "Comprobante de pago del derecho de tramitación del MRE."
+      ],
+      "costo_obtencion": null,
+      "costo_nota": "Lo emite tu instituto / Dirección Regional (costo variable). La apostilla es GRATIS para peruanos.",
+      "dias_obtencion": "Varía según el instituto/DRE.",
+      "comprobante": true,
+      "tip": "Acredita tu condición de peruano para que la apostilla no tenga costo."
+    },
+    "constancia_instituto": {
+      "condiciones": [
+        "Documento original y copia certificada por la autoridad Regional competente y el MINEDU.",
+        "Comprobante de pago del derecho de tramitación del MRE."
+      ],
+      "costo_obtencion": null,
+      "costo_nota": "Lo emite el instituto / Dirección Regional (costo variable). Confírmalo en la entidad.",
+      "dias_obtencion": "Varía según la entidad.",
+      "comprobante": true,
+      "tip": null
+    },
+    "titulo_universidad": {
+      "condiciones": [
+        "Debe contar con la 'Constancia de Verificación de Datos de Autoridades' y/o 'Constancia de Inscripción' de la SUNEDU.",
+        "Comprobante de pago del derecho de tramitación del MRE."
+      ],
+      "costo_obtencion": 0,
+      "costo_nota": "La Constancia de la SUNEDU es GRATIS para peruanos (exonerada de pago). El diploma/título lo emite tu universidad (costo aparte, variable). La apostilla es GRATIS para peruanos.",
+      "dias_obtencion": "La constancia se tramita en línea en enlinea.sunedu.gob.pe.",
+      "comprobante": true,
+      "tip": "Tramita primero la Constancia de Verificación en la SUNEDU; sin ella el MRE no admite el documento universitario."
+    },
+    "acta_municipal": {
+      "condiciones": [
+        "Copia certificada del acta (original), emitida por la municipalidad.",
+        "Debe estar legalizada por el Autenticador de firmas de RENIEC (firma física + sticker).",
+        "Se sugiere vigencia no mayor a 3 meses."
+      ],
+      "costo_obtencion": 10.30,
+      "costo_nota": "Copia certificada de RENIEC: aprox. S/ 10.30 en línea por Págalo.pe (S/ 12.00 presencial). Referencial; confírmalo en pagalo.pe.",
+      "dias_obtencion": "El mismo día (en línea, pocos minutos).",
+      "comprobante": true,
+      "tip": "Las partidas sacadas por internet o por las máquinas multitrámite NO siempre sirven para apostilla: necesitas la copia con la firma física del registrador y el sticker de RENIEC. Pregunta en RENIEC si esa firma es válida para el exterior."
+    },
+    "solteria_municipal": {
+      "condiciones": [
+        "Certificado o constancia de soltería original, certificado por el Registrador Civil de la municipalidad.",
+        "Debe estar legalizado por el Autenticador de firmas de RENIEC.",
+        "Se sugiere vigencia no mayor a 3 meses."
+      ],
+      "costo_obtencion": null,
+      "costo_nota": "La constancia la emite la municipalidad (costo variable); la legalización en RENIEC cuesta aprox. S/ 10.30 en línea. Confírmalo en pagalo.pe / la municipalidad.",
+      "dias_obtencion": "Varía según la municipalidad.",
+      "comprobante": true,
+      "tip": "Pregunta en RENIEC si la firma del registrador es válida para el exterior antes de ir al MRE."
+    },
+    "acta_reniec": {
+      "condiciones": [
+        "Copia certificada del acta emitida directamente por RENIEC (Certificador de RENIEC).",
+        "Se sugiere vigencia no mayor a 3 meses."
+      ],
+      "costo_obtencion": 10.30,
+      "costo_nota": "Copia certificada de RENIEC: aprox. S/ 10.30 en línea por Págalo.pe (S/ 12.00 presencial). Referencial; confírmalo en pagalo.pe.",
+      "dias_obtencion": "El mismo día (en línea, pocos minutos).",
+      "comprobante": true,
+      "tip": "La copia debe tener la firma física del Certificador de RENIEC. Las versiones por máquina/internet no siempre valen para apostilla: confírmalo en RENIEC."
+    },
+    "constancia_matrimonio_reniec": {
+      "condiciones": [
+        "Constancia de inscripción de matrimonio (u otra) certificada por el Certificador de RENIEC.",
+        "Se sugiere vigencia no mayor a 3 meses."
+      ],
+      "costo_obtencion": 10.30,
+      "costo_nota": "Copia/constancia certificada de RENIEC: aprox. S/ 10.30 en línea por Págalo.pe (S/ 12.00 presencial). Referencial; confírmalo en pagalo.pe.",
+      "dias_obtencion": "El mismo día (en línea, pocos minutos).",
+      "comprobante": true,
+      "tip": "Pide la versión con firma del Certificador de RENIEC válida para el exterior."
+    },
+    "eclesiastico": {
+      "condiciones": [
+        "Documento eclesiástico original y copia certificada.",
+        "Debe estar legalizado por el Arzobispado de la jurisdicción (Obispo, Vicario General, Canciller, Vicecanciller o Notario eclesiástico)."
+      ],
+      "costo_obtencion": null,
+      "costo_nota": "Lo emite tu parroquia/arzobispado (costo variable). Confírmalo en la entidad.",
+      "dias_obtencion": "Varía según el arzobispado.",
+      "comprobante": true,
+      "tip": "La firma del arzobispado debe estar registrada en Cancillería; pregúntalo antes de ir al MRE."
+    },
+    "certificado_medico": {
+      "condiciones": [
+        "Certificado, informe o constancia médica original.",
+        "Legalizado por el área/funcionario competente de MINSA, EsSalud o el Decano del Colegio Médico del Perú, según el origen del documento."
+      ],
+      "costo_obtencion": null,
+      "costo_nota": "Lo emite el establecimiento de salud o el Colegio Médico (costo variable). Confírmalo en la entidad.",
+      "dias_obtencion": "Varía según la entidad.",
+      "comprobante": true,
+      "tip": "Asegúrate de que lo legalice la entidad correcta según quién lo emitió (MINSA, EsSalud o Colegio Médico)."
+    },
+    "colegio_profesional": {
+      "condiciones": [
+        "Certificado o constancia original (o copia certificada).",
+        "Certificado por el Decano del Colegio Profesional correspondiente o funcionario competente."
+      ],
+      "costo_obtencion": null,
+      "costo_nota": "Lo emite tu Colegio Profesional (costo variable). Confírmalo en el Colegio.",
+      "dias_obtencion": "Varía según el Colegio.",
+      "comprobante": true,
+      "tip": "La firma del representante del Colegio debe estar registrada y vigente en Cancillería."
+    },
+    "antecedentes_penales": {
+      "condiciones": [
+        "Certificado de Antecedentes Penales emitido por el Registro Nacional de Condenas (Poder Judicial), en línea.",
+        "Comprobante de pago del derecho de tramitación del MRE."
+      ],
+      "costo_obtencion": 40.40,
+      "costo_nota": "Certificado de antecedentes penales: aprox. S/ 40.40 en línea por Págalo.pe. Referencial; confírmalo en pagalo.pe.",
+      "dias_obtencion": "En línea, normalmente el mismo día.",
+      "comprobante": true,
+      "tip": "Sácalo por pagalo.pe y pide la versión para uso en el extranjero."
+    },
+    "antecedentes_judiciales": {
+      "condiciones": [
+        "Certificado de Antecedentes Judiciales emitido por el INPE (físico o digital).",
+        "Comprobante de pago del derecho de tramitación del MRE."
+      ],
+      "costo_obtencion": 37.70,
+      "costo_nota": "Certificado de antecedentes judiciales (INPE): aprox. S/ 37.70. Referencial; confírmalo en pagalo.pe.",
+      "dias_obtencion": "Varía; consúltalo al solicitarlo.",
+      "comprobante": true,
+      "tip": "Indica que es para uso en el extranjero al solicitarlo."
+    },
+    "antecedentes_policiales": {
+      "condiciones": [
+        "Certificado de Antecedentes Policiales emitido por la División de Identificación Criminalística de la PNP.",
+        "Debe ser el emitido para uso en el extranjero.",
+        "Comprobante de pago del derecho de tramitación del MRE."
+      ],
+      "costo_obtencion": 17.00,
+      "costo_nota": "Certificado de antecedentes policiales (PNP): aprox. S/ 17.00. Referencial; confírmalo en pagalo.pe.",
+      "dias_obtencion": "Varía; consúltalo al solicitarlo.",
+      "comprobante": true,
+      "tip": "Pide expresamente la versión 'para uso en el extranjero'."
+    },
+    "migraciones": {
+      "condiciones": [
+        "Documento original o copia certificada por el área competente de Migraciones (p. ej. certificado de movimiento migratorio).",
+        "Comprobante de pago del derecho de tramitación del MRE."
+      ],
+      "costo_obtencion": 18.90,
+      "costo_nota": "Certificado de movimiento migratorio: aprox. S/ 18.90 en línea por Págalo.pe. Referencial; confírmalo en pagalo.pe.",
+      "dias_obtencion": "En línea (Agencia Digital de Migraciones), se genera de inmediato.",
+      "comprobante": true,
+      "tip": "El movimiento migratorio se tramita 24/7 en la Agencia Digital de Migraciones."
+    },
+    "notarial": {
+      "condiciones": [
+        "Documento protocolar o extraprotocolar original del notario; o documento privado con legalización notarial de firma.",
+        "Si tiene más de una página: debe llevar sello de unión y/o numeración correlativa.",
+        "Comprobante de pago del derecho de tramitación del MRE."
+      ],
+      "costo_obtencion": null,
+      "costo_nota": "El arancel notarial varía según el acto y la notaría. Confírmalo en la notaría.",
+      "dias_obtencion": "Varía según la notaría.",
+      "comprobante": true,
+      "tip": "Para certificar la firma del notario usa la Junta de Decanos (suele ser el mismo día o 1 día, más rápida que el Colegio de Notarios)."
+    },
+    "trabajo": {
+      "condiciones": [
+        "Si es público: original o copia certificada por el fedatario de la institución.",
+        "Si es privado con menos de 3 años: el original con legalización notarial de la firma de la persona jurídica.",
+        "Si es privado con más de 3 años: original o copia certificada por el fedatario/certificador del MINTRA.",
+        "Comprobante de pago del derecho de tramitación del MRE."
+      ],
+      "costo_obtencion": null,
+      "costo_nota": "El costo depende de la ruta (notaría para privados <3 años, MINTRA para >3 años). Confírmalo en la entidad.",
+      "dias_obtencion": "Varía según la ruta.",
+      "comprobante": true,
+      "tip": "Define primero si tu constancia es pública o privada y de cuántos años: eso cambia quién la certifica."
+    },
+    "funcionario_estado": {
+      "condiciones": [
+        "Original o copia certificada por el fedatario/certificador del área competente de la entidad que lo emitió (SUNAT, SUNARP, ministerios, etc.).",
+        "Para copias de actos registrales municipales: solo las certifica el registrador civil de la misma."
+      ],
+      "costo_obtencion": null,
+      "costo_nota": "El costo de la copia/fedateo depende de la entidad. Confírmalo en pagalo.pe o en la entidad.",
+      "dias_obtencion": "Varía según la entidad.",
+      "comprobante": true,
+      "tip": "La firma del fedatario/funcionario debe estar registrada y vigente en Cancillería. Para copias literales de SUNARP, la autenticación de firma solo se hace en la sede central (a lo mucho 3 días)."
+    },
+    "judicial": {
+      "condiciones": [
+        "Documento original o copia certificada por el Presidente de la Corte Superior de Justicia de la jurisdicción que lo emitió.",
+        "Comprobante de pago del derecho de tramitación del MRE."
+      ],
+      "costo_obtencion": null,
+      "costo_nota": "La copia certificada judicial se solicita en mesa de partes (costo variable). Confírmalo en la Corte.",
+      "dias_obtencion": "Varía según la Corte.",
+      "comprobante": true,
+      "tip": "Lleva el número de expediente y tu DNI; pregunta en mesa de partes a qué oficina solicitar la copia certificada para uso en el extranjero."
+    },
+    "traduccion_tpj": {
+      "condiciones": [
+        "Traducción oficial (física o digital) firmada por un Traductor Público Juramentado (TPJ).",
+        "El documento de origen y la traducción deben ir unidos formalmente.",
+        "El documento de origen debe tener su propia cadena de certificación / apostilla."
+      ],
+      "costo_obtencion": null,
+      "costo_nota": "El honorario del TPJ varía (suele cobrarse por página). Pregúntalo al traductor.",
+      "dias_obtencion": "Varía según el traductor.",
+      "comprobante": true,
+      "tip": "Verifica que el TPJ esté en el directorio oficial del MRE; su firma debe estar registrada en Cancillería."
+    },
+    "traduccion_colegio": {
+      "condiciones": [
+        "Traducción certificada (física o digital) firmada por un traductor colegiado.",
+        "El documento de origen y la traducción deben ir unidos formalmente.",
+        "Debe estar legalizada por el Colegio de Traductores del Perú."
+      ],
+      "costo_obtencion": null,
+      "costo_nota": "El honorario del traductor colegiado varía. Pregúntalo en el Colegio de Traductores.",
+      "dias_obtencion": "Varía; la carátula con firma digital de la decana suele ser más rápida.",
+      "comprobante": true,
+      "tip": "La traducción certificada vale en algunos destinos y en otros no: confírmalo con el país de destino."
+    },
+    "consular_peruano": {
+      "condiciones": [
+        "Documento original o copia certificada expedida por un funcionario consular peruano en el exterior.",
+        "Comprobante de pago del derecho de tramitación del MRE."
+      ],
+      "costo_obtencion": null,
+      "costo_nota": "El derecho consular depende del trámite. Confírmalo en el consulado.",
+      "dias_obtencion": "Varía según el consulado.",
+      "comprobante": true,
+      "tip": "La firma del funcionario consular peruano debe estar registrada en Cancillería; no requiere legalización previa adicional."
+    },
+    "consular_extranjero": {
+      "condiciones": [
+        "Documento original o copia certificada expedida por un funcionario consular extranjero acreditado en el Perú.",
+        "Comprobante de pago del derecho de tramitación del MRE."
+      ],
+      "costo_obtencion": null,
+      "costo_nota": "El derecho del consulado extranjero varía. Confírmalo en ese consulado.",
+      "dias_obtencion": "Varía según el consulado.",
+      "comprobante": true,
+      "tip": "La firma del funcionario consular extranjero debe estar registrada y vigente en Cancillería."
+    },
+    "extranjero_legalizado_consulado_extranjero": {
+      "condiciones": [
+        "Documento original o copia certificada expedida por un funcionario consular extranjero acreditado.",
+        "Paga el Reintegro Consular que te indiquen (aprox. US$ 10 a US$ 37.5 según el caso) y guarda el comprobante.",
+        "Comprobante de pago del derecho de tramitación del MRE (S/ 31)."
+      ],
+      "costo_obtencion": null,
+      "costo_nota": "Además de la tasa del MRE (S/ 31), aquí se paga un Reintegro Consular en dólares (aprox. US$ 10 a 37.5 según el tipo). Pregunta el monto exacto en el consulado.",
+      "dias_obtencion": "Varía según el consulado.",
+      "comprobante": true,
+      "tip": "Sin el pago del Reintegro Consular y la firma del funcionario, el MRE no podrá legalizar el documento."
+    },
+    "extranjero_certificado_consulado_peruano": {
+      "condiciones": [
+        "Documento certificado por un funcionario consular peruano en el exterior.",
+        "Comprobante de pago del derecho de tramitación del MRE (gratuito para estudios de peruanos)."
+      ],
+      "costo_obtencion": null,
+      "costo_nota": "El derecho consular varía. Para documentos de estudio de peruanos, la legalización de la firma consular es GRATIS.",
+      "dias_obtencion": "Varía según el consulado.",
+      "comprobante": true,
+      "tip": "Si es un documento de estudios de un peruano, acredita la nacionalidad para la gratuidad."
+    }
+  }
+}

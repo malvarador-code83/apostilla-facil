@@ -1,0 +1,22 @@
+# ─── Dataset de autoridades firmantes (CONDICIÓN DEL LAB MRE) ───
+# El CSV de autoridades es de uso EXCLUSIVO para prototipado.
+# NO se publica ni se redistribuye. Nunca debe entrar al repositorio público.
+data/autoridades.json
+data/autoridades*.json
+**/Autoridades firmantes.csv
+worker/.dev.vars
+worker/autoridades*.json
+
+# ─── Cloudflare / Wrangler ───
+.wrangler/
+node_modules/
+.dev.vars
+
+# ─── Sistema ───
+.DS_Store
+Thumbs.db
+*.log
+
+# --- Notas de trabajo personales (no publicar) ---
+BITACORA.md
+PENDIENTE.md

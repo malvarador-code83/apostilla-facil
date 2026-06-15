@@ -1,0 +1,52 @@
+{
+  "_meta": {
+    "titulo": "¿Dónde apostillar o legalizar?",
+    "intro": "El trámite presencial se realiza en la Sede Central del MRE (Lima), en algunos Centros MAC y en las Oficinas Desconcentradas del MRE en regiones. No todas las oficinas atienden apostilla/legalización.",
+    "digital": "Recuerda: si tu documento es íntegramente digital, puedes apostillarlo o legalizarlo EN LÍNEA, sin ir a una oficina, en serviciosalciudadano.rree.gob.pe.",
+    "aviso": "Direcciones, horarios y contactos son REFERENCIALES (fuente: gob.pe / MRE, consultado jun-2026) y pueden cambiar. Confirma el horario y si la oficina atiende apostilla antes de ir.",
+    "fuente_url": "https://www.gob.pe/institucion/rree/sedes",
+    "fuente_texto": "MRE — gob.pe/institucion/rree/sedes y gob.pe/37288"
+  },
+  "grupos": [
+    {
+      "grupo": "Lima — Sede Central",
+      "oficinas": [
+        { "nombre": "Sede Central del MRE — Trámites Consulares", "ciudad": "Cercado de Lima", "direccion": "Jr. Miroquesada 263, Lima", "horario": "Lun a Vie, 8:30 a 16:30", "telefono": "(01) 204-2400", "apostilla": true }
+      ]
+    },
+    {
+      "grupo": "Lima y Callao — Centros MAC (Mejor Atención al Ciudadano)",
+      "nota": "El MRE atiende apostilla/legalización en estos Centros MAC. Horarios referenciales; confirma en ALO MAC 1800.",
+      "oficinas": [
+        { "nombre": "MAC Lima Norte", "ciudad": "Comas, Lima", "direccion": "Mallplaza Comas, Av. Los Ángeles 602, sótano 1, Urb. El Álamo (reubicado en 2023: antes estaba en Plaza Norte, Independencia)", "horario": "Lun a Vie 8:30 a 18:00", "telefono": "ALO MAC 1800", "apostilla": true },
+        { "nombre": "MAC Lima Este", "ciudad": "Santa Anita, Lima", "direccion": "Mall Aventura Santa Anita, Carretera Central 111", "horario": "Lun a Vie 8:30 a 18:00, Sáb 8:30 a 13:00", "telefono": "ALO MAC 1800", "apostilla": true },
+        { "nombre": "MAC Lima Sur", "ciudad": "San Juan de Miraflores, Lima", "direccion": "Open Plaza Atocongo, Av. Circunvalación 1801", "horario": "Lun a Vie 8:30 a 18:00, Sáb 8:30 a 13:00", "telefono": "ALO MAC 1800", "apostilla": true },
+        { "nombre": "MAC Callao", "ciudad": "Bellavista, Callao", "direccion": "Mall Plaza Bellavista, Av. Óscar R. Benavides 3866", "horario": "Lun a Vie 8:30 a 18:00, Sáb 8:30 a 13:00", "telefono": "ALO MAC 1800", "apostilla": true }
+      ]
+    },
+    {
+      "grupo": "Oficinas Desconcentradas en regiones — atienden apostilla/legalización",
+      "oficinas": [
+        { "nombre": "ODE Cusco", "ciudad": "Cusco", "direccion": "Plazoleta Limacpampa Grande 565, Centro Histórico", "horario": "Lun a Vie 9 a 13 y 15 a 18", "correo": "cusco@rree.gob.pe", "apostilla": true },
+        { "nombre": "ODE Iquitos (Loreto)", "ciudad": "Iquitos", "direccion": "Calle Pevas 120", "horario": "Lun a Vie 9 a 13 y 15 a 17", "correo": "iquitos@rree.gob.pe", "apostilla": true },
+        { "nombre": "ODE Puno", "ciudad": "Puno", "direccion": "Jr. Conde de Lemos 237", "horario": "Apostillas/legalizaciones Lun a Vie 9 a 12", "telefono": "(051) 367074", "correo": "puno@rree.gob.pe", "apostilla": true },
+        { "nombre": "ODE Tacna", "ciudad": "Tacna", "direccion": "Calle Cajamarca 37, Urb. Noe", "horario": "Lun a Vie 8:30 a 14", "telefono": "(052) 425642", "correo": "tacna@rree.gob.pe", "apostilla": true },
+        { "nombre": "ODE Tumbes", "ciudad": "Tumbes", "direccion": "Jr. Bolognesi 101, 2.º piso", "horario": "Lun a Vie 9 a 15", "correo": "tumbes@rree.gob.pe", "apostilla": true },
+        { "nombre": "ODE Arequipa", "ciudad": "Arequipa", "direccion": "Confirma dirección y horario en gob.pe/institucion/rree/sedes", "correo": "arequipa@rree.gob.pe", "apostilla": true },
+        { "nombre": "ODE Piura", "ciudad": "Piura", "direccion": "Confirma dirección y horario en gob.pe/institucion/rree/sedes", "correo": "piura@rree.gob.pe", "apostilla": true }
+      ]
+    },
+    {
+      "grupo": "Otras Oficinas Desconcentradas — consulta si atienden apostilla",
+      "nota": "Estas oficinas existen, pero el servicio de apostilla/legalización puede no estar disponible o ser parcial. Confírmalo antes de ir.",
+      "oficinas": [
+        { "nombre": "ODE Trujillo (La Libertad)", "ciudad": "Trujillo", "apostilla": false },
+        { "nombre": "ODE Cajamarca", "ciudad": "Cajamarca", "apostilla": false },
+        { "nombre": "ODE Chachapoyas (Amazonas)", "ciudad": "Chachapoyas", "apostilla": false },
+        { "nombre": "ODE Pucallpa (Ucayali)", "ciudad": "Pucallpa", "apostilla": false },
+        { "nombre": "ODE Puerto Maldonado (Madre de Dios)", "ciudad": "Puerto Maldonado", "apostilla": false },
+        { "nombre": "ODE Moquegua", "ciudad": "Moquegua", "apostilla": false }
+      ]
+    }
+  ]
+}
