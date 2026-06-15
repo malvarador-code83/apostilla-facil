@@ -1,6 +1,6 @@
-# Apostilla sin adivinar 📑
+# Apostilla Fácil 📑
 
-> **Sabe exactamente qué necesita tu documento antes de ir al Ministerio.**
+> **Descubre qué necesita tu documento antes de ir al Ministerio de Relaciones Exteriores.**
 > Prototipo para la **Hackatón TransformaGob 2026 · Desafío del Ministerio de Relaciones Exteriores (MRE)**:
 > *"Orientación digital para apostillar sin adivinar"*.
 
@@ -8,9 +8,10 @@ Un asistente guiado (estilo *TurboTax*) que, en ~2 minutos y **sin pedirte datos
 **plan exacto** para apostillar o legalizar tu documento: qué firmas necesita, en qué orden, de qué
 entidades, cuánto demora y cuánto cuesta — y **verifica** si el documento que ya tienes está listo.
 
-> **📌 Estado / traspaso entre sesiones:** el MVP está construido y probado. Para retomar, lee
-> **[BITACORA.md](BITACORA.md)** (qué se hizo, cómo y por qué) y **[PENDIENTE.md](PENDIENTE.md)**
-> (despliegue, PPT, validación y envío).
+> **⚠️ Alcance del prototipo (importante):** la cadena de certificación para **partidas/actas de nacimiento**
+> es la única **completa y validada con datos de campo**. Las demás cadenas son **referenciales** y deben
+> confirmarse en la **ventanilla de Informes del MRE** antes de usarlas; las reglas por país de destino son
+> orientativas. Es un prototipo demostrativo, sin integración con sistemas del MRE.
 
 ## El problema
 
